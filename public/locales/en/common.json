@@ -1,0 +1,422 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Innovative Software Solutions",
+      "subtitle": "We build robust, scalable, and secure applications for your business",
+      "cta": "Get in Touch"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We provide end-to-end software development services to help you transform your ideas into reality",
+      "learnMore": "Learn More"
+    },
+    "interactive": {
+      "title": "Our Technology Stack",
+      "description": "We use cutting-edge technologies to build modern and efficient applications",
+      "placeholder": "Interactive technology showcase coming soon"
+    },
+    "clients": {
+      "title": "Trusted by",
+      "description": "Our clients include leading companies across various industries"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Contact us today to discuss how we can help turn your vision into reality"
+    }
+  },
+  "about": {
+    "title": "About OS TrustTech",
+    "description": "We're a team of passionate technologists dedicated to crafting innovative software solutions.",
+    "philosophy": "At OS TrustTech, we believe in combining technical excellence with a deep understanding of our clients' business needs. Our solutions are built not just to solve today's challenges, but to adapt and grow with your business tomorrow.",
+    "guiding_principle": "Building trust through technology excellence.",
+    "guiding_principle_label": "Our Guiding Principle",
+    "core_values": {
+      "title": "Our Core Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We are committed to delivering the highest quality solutions that exceed expectations."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We embrace new technologies and approaches to solve complex challenges."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "Our clients trust us for our consistency, dependability and transparency."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "We believe in continuous improvement and helping our clients and team grow."
+      }
+    },
+    "technology": {
+      "title": "Our Technology Approach",
+      "description": "We combine the latest technologies with proven methodologies to deliver exceptional results that stand the test of time.",
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "We employ modern JavaScript frameworks and responsive design techniques to create fast, intuitive, and engaging user experiences across all devices and platforms.",
+        "tags": ["Modern Frameworks", "Responsive Design", "Interactive UI"]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Our server-side solutions utilize scalable architectures, efficient database design, and robust API development to power high-performance applications.",
+        "tags": ["Scalable Architecture", "Database Optimization", "API Development"]
+      },
+      "cloud": {
+        "title": "Cloud & Infrastructure",
+        "description": "We leverage cloud-native technologies and containerization to create deployments that are secure, scalable, and cost-effective for businesses of all sizes.",
+        "tags": ["Cloud-Native", "Containerization", "Secure Deployment"]
+      },
+      "practices": {
+        "title": "Development Practices",
+        "description": "Our workflow incorporates CI/CD pipelines, automated testing, and agile methodologies to ensure quality, reliability, and rapid delivery of solutions.",
+        "tags": ["CI/CD Pipelines", "Automated Testing", "Agile Methodology"]
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To deliver high-quality software solutions that drive business growth and technological innovation"
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the talented professionals behind our success",
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "CEO & Founder",
+          "bio": "With over 15 years of experience in tech leadership, John leads our strategic vision and growth."
+        },
+        {
+          "name": "Jane Smith",
+          "role": "CTO",
+          "bio": "Jane oversees our technical direction, ensuring we stay at the forefront of technology innovation."
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "Lead Developer", 
+          "bio": "Alex brings 10 years of expertise in building scalable applications and mentoring development teams."
+        },
+        {
+          "name": "Sarah Williams",
+          "role": "UX/UI Director",
+          "bio": "Sarah combines aesthetics with functionality to create intuitive and delightful user experiences."
+        }
+      ]
+    },
+    "milestones": {
+      "title": "Milestones",
+      "description": "Our journey of growth and success",
+      "items": [
+        {
+          "year": "2015",
+          "title": "Company Founded",
+          "description": "OS TrustTech was established with a vision to create reliable software solutions."
+        },
+        {
+          "year": "2017",
+          "title": "First Major Client",
+          "description": "Secured our first enterprise client and delivered a successful banking software system."
+        },
+        {
+          "year": "2019",
+          "title": "Team Expansion",
+          "description": "Grew our team to 25 professionals and opened a new development center."
+        },
+        {
+          "year": "2021",
+          "title": "International Presence",
+          "description": "Expanded operations to serve international clients across Europe and Asia."
+        },
+        {
+          "year": "2023",
+          "title": "Innovation Award",
+          "description": "Received the National Innovation Award for our contributions to the tech industry."
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "hero": {
+      "title": "Our Services",
+      "description": "Comprehensive software solutions tailored to your business needs"
+    },
+    "offer": {
+      "title": "What We Offer",
+      "description": "End-to-end solutions for all your software development needs"
+    },
+    "core": {
+      "title": "Our Core Services",
+      "description": "Detailed look at our primary service offerings"
+    },
+    "process": {
+      "title": "Our Development Process",
+      "description": "A systematic approach to ensure project success",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Discovery",
+          "description": "We learn about your business, goals, and project requirements"
+        },
+        {
+          "step": "02",
+          "title": "Planning",
+          "description": "Creating a roadmap with timelines, features, and deliverables"
+        },
+        {
+          "step": "03",
+          "title": "Design",
+          "description": "Crafting user experience and visual design of your solution"
+        },
+        {
+          "step": "04",
+          "title": "Development",
+          "description": "Building your solution with clean, maintainable code"
+        },
+        {
+          "step": "05",
+          "title": "Testing",
+          "description": "Rigorous quality assurance to ensure everything works perfectly"
+        },
+        {
+          "step": "06",
+          "title": "Deployment",
+          "description": "Launching your solution and providing continued support"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Contact us today to discuss how we can help bring your ideas to life",
+      "button": "Get in Touch"
+    },
+    "webdev": {
+      "title": "Web Development",
+      "description": "Custom websites and web applications built with the latest technologies",
+      "features": [
+        "Responsive web applications",
+        "Progressive Web Apps (PWA)",
+        "E-commerce platforms",
+        "Custom CMS solutions",
+        "API development and integration"
+      ]
+    },
+    "mobiledev": {
+      "title": "Mobile Application Development",
+      "description": "Native and cross-platform mobile apps for iOS and Android",
+      "features": [
+        "Native iOS development",
+        "Native Android development",
+        "Cross-platform (React Native, Flutter)",
+        "Mobile app redesign and optimization",
+        "App Store submission assistance"
+      ]
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "User-centered design that enhances user experience and satisfaction",
+      "features": [
+        "User research and personas",
+        "Information architecture",
+        "Wireframing and prototyping",
+        "Visual design and branding",
+        "Usability testing"
+      ]
+    },
+    "qa": {
+      "title": "QA & Testing",
+      "description": "Comprehensive testing to ensure your software is bug-free and reliable",
+      "features": [
+        "Manual testing",
+        "Automated testing",
+        "Performance testing",
+        "Security testing",
+        "QA process implementation"
+      ]
+    },
+    "database": {
+      "title": "Database Solutions",
+      "description": "Efficient data storage and management solutions for your business",
+      "features": [
+        "Database design and modeling",
+        "SQL and NoSQL implementations",
+        "Data migration and integration",
+        "Database performance optimization",
+        "Backup and recovery solutions"
+      ]
+    },
+    "devops": {
+      "title": "DevOps & Cloud",
+      "description": "Streamline your development and operational processes",
+      "features": [
+        "CI/CD pipeline setup",
+        "Container orchestration (Docker, Kubernetes)",
+        "Cloud migration (AWS, Azure, GCP)",
+        "Infrastructure as Code",
+        "Monitoring and logging solutions"
+      ]
+    },
+    "security": {
+      "title": "Cybersecurity",
+      "description": "Protect your digital assets with robust security measures",
+      "features": [
+        "Security assessment and auditing",
+        "Penetration testing",
+        "Security implementation",
+        "Compliance consulting (GDPR, HIPAA)",
+        "Security training for teams"
+      ]
+    },
+    "maintenance": {
+      "title": "Maintenance & Support",
+      "description": "Ensure your software continues to run smoothly",
+      "features": [
+        "24/7 technical support",
+        "Regular updates and patches",
+        "Performance monitoring",
+        "Bug fixing and troubleshooting",
+        "System health checks"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "filter": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "design": "Design"
+    },
+    "description": "Explore our portfolio of successful client projects",
+    "buttons": {
+      "viewLive": "View Live",
+      "sourceCode": "Source Code"
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "description": "What our clients say about working with us",
+      "items": [
+        {
+          "name": "John Smith",
+          "company": "ABC Corporation",
+          "comment": "The team at OS TrustTech delivered our project on time and exceeded our expectations. Their technical expertise and communication were exceptional."
+        },
+        {
+          "name": "Sarah Johnson",
+          "company": "XYZ Industries",
+          "comment": "Working with OS TrustTech was a great experience. They understood our requirements perfectly and built exactly what we needed."
+        },
+        {
+          "name": "Robert Davis",
+          "company": "Acme Enterprises",
+          "comment": "The mobile app developed by OS TrustTech has transformed our business operations. Their ongoing support has been invaluable."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Contact us today to discuss how we can help bring your ideas to life",
+      "button": "Get Started"
+    },
+    "projects": {
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "A complete e-commerce solution with customer portal, admin dashboard, and inventory management."
+      },
+      "banking": {
+        "title": "Banking Mobile App",
+        "description": "Secure mobile banking application with transaction history, bill payments, and account management."
+      },
+      "healthcare": {
+        "title": "Healthcare Management System",
+        "description": "Comprehensive healthcare platform for patient records, appointment scheduling, and billing."
+      },
+      "realestate": {
+        "title": "Real Estate Marketplace",
+        "description": "Property listing and search platform with virtual tours and mortgage calculator."
+      },
+      "fitness": {
+        "title": "Fitness Tracking App",
+        "description": "Mobile fitness tracker with workout plans, progress monitoring, and social features."
+      },
+      "supplychain": {
+        "title": "Supply Chain Management System",
+        "description": "End-to-end supply chain solution with inventory tracking, order management, and analytics."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you. Get in touch with our team.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "title": "Send Us a Message",
+      "description": "We'd love to hear from you. Reach out for inquiries, partnerships, or to discuss your project.",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "Your email address",
+      "subjectPlaceholder": "Subject of your message",
+      "messagePlaceholder": "Your message"
+    },
+    "info": "Contact Information",
+    "phone": "+998 71 234 5678",
+    "email": "info@ostrusttech.uz",
+    "address": {
+      "title": "Visit Our Office",
+      "street": "123 Technology Street",
+      "city": "Tashkent",
+      "country": "Uzbekistan"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "weekdayHours": "9:00 AM - 6:00 PM",
+      "saturdayHours": "10:00 AM - 4:00 PM",
+      "sundayHours": "Closed"
+    },
+    "map": {
+      "title": "Find Us",
+      "description": "Visit our office or get in touch with us online"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to commonly asked questions about our services",
+      "questions": [
+        {
+          "question": "What services do you offer?",
+          "answer": "We offer a comprehensive range of software development services including web development, mobile app development, UX/UI design, and cloud solutions."
+        },
+        {
+          "question": "How much does it cost to develop a project?",
+          "answer": "Project costs vary based on requirements, complexity, and timeline. Contact us for a free consultation and quote tailored to your specific needs."
+        },
+        {
+          "question": "How long does it take to complete a project?",
+          "answer": "Development timeframes depend on project scope and complexity. We'll provide a detailed timeline during our initial consultation."
+        },
+        {
+          "question": "Do you provide ongoing maintenance and support?",
+          "answer": "Yes, we offer various maintenance and support packages to ensure your software continues to run smoothly after launch."
+        }
+      ]
+    },
+    "success": "Thank you! Your message has been sent successfully."
+  },
+  "footer": {
+    "rights": "© 2024 OS TrustTech. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

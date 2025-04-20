@@ -1,0 +1,422 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "projects": "Loyihalar",
+    "contact": "Bog'lanish"
+  },
+  "home": {
+    "hero": {
+      "title": "Innovatsion Dasturiy Yechimlar",
+      "subtitle": "Biz biznesingiz uchun ishonchli, miqyoslanadigan va xavfsiz ilovalarni yaratamiz",
+      "cta": "Biz bilan bog'laning"
+    },
+    "services": {
+      "title": "Bizning Xizmatlar",
+      "description": "Biz g'oyalaringizni amalga oshirishga yordam berish uchun dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz",
+      "learnMore": "Batafsil ma'lumot"
+    },
+    "interactive": {
+      "title": "Bizning Texnologik Stekimiz",
+      "description": "Biz zamonaviy va samarali ilovalarni yaratish uchun ilg'or texnologiyalardan foydalanamiz",
+      "placeholder": "Interaktiv texnologiya ko'rgazmasi tez orada"
+    },
+    "clients": {
+      "title": "Bizga ishonadi",
+      "description": "Mijozlarimiz orasida turli sohalardagi yetakchi kompaniyalar bor"
+    },
+    "cta": {
+      "title": "Loyihangizni boshlashga tayyormisiz?",
+      "description": "G'oyangizni qanday qilib amalga oshirishimiz mumkinligini muhokama qilish uchun bugun biz bilan bog'laning"
+    }
+  },
+  "about": {
+    "title": "OS TrustTech haqida",
+    "description": "Biz innovatsion dasturiy yechimlarni yaratishga bag'ishlangan ishqiboz texnologlar jamoasimiz.",
+    "philosophy": "OS TrustTech'da biz texnik mukammallikni mijozlarimizning biznes ehtiyojlarini chuqur tushunish bilan birlashtirish kerakligiga ishonamiz. Bizning yechimlarimiz nafaqat bugungi muammolarni hal qilish uchun, balki kelajakda biznesingiz bilan birga moslashish va o'sish uchun yaratilgan.",
+    "guiding_principle": "Texnologiya mukammalligi orqali ishonch qurish.",
+    "guiding_principle_label": "Bizning Asosiy Tamoyilimiz",
+    "core_values": {
+      "title": "Bizning Asosiy Qadriyatlarimiz",
+      "excellence": {
+        "title": "Mukammallik",
+        "description": "Biz kutilganidan yuqori sifatli yechimlarni yetkazib berishga intilamiz."
+      },
+      "innovation": {
+        "title": "Innovatsiya",
+        "description": "Biz murakkab muammolarni hal qilish uchun yangi texnologiyalar va yondashuvlarni qo'llaymiz."
+      },
+      "reliability": {
+        "title": "Ishonchlilik",
+        "description": "Mijozlarimiz bizga doimiyligimiz, ishonchliligimiz va shaffofligimiz uchun ishonishadi."
+      },
+      "growth": {
+        "title": "O'sish",
+        "description": "Biz doimiy takomillashtirishga ishonib, mijozlarimiz va jamoamizga o'sishga yordam beramiz."
+      }
+    },
+    "technology": {
+      "title": "Bizning Texnologik Yondashuvimiz",
+      "description": "Biz so'nggi texnologiyalarni sinovdan o'tgan metodologiyalar bilan birlashtirib, vaqt sinovidan o'tadigan ajoyib natijalarni yetkazib beramiz.",
+      "frontend": {
+        "title": "Frontend Ishlab Chiqish",
+        "description": "Biz barcha qurilmalar va platformalarda tez, intuitiv va jozibali foydalanuvchi tajribalarini yaratish uchun zamonaviy JavaScript freymvorklari va moslashuvchan dizayn texnikalarini qo'llaymiz.",
+        "tags": ["Zamonaviy Freymvorklar", "Moslashuvchan Dizayn", "Interaktiv UI"]
+      },
+      "backend": {
+        "title": "Backend Ishlab Chiqish",
+        "description": "Bizning server tomonidagi yechimlarimiz yuqori unumdorlikdagi ilovalarni ta'minlash uchun kengaytiriladigan arxitekturalar, samarali ma'lumotlar bazasi loyihasi va mustahkam API ishlab chiqishdan foydalanadi.",
+        "tags": ["Kengaytiriladigan Arxitektura", "Ma'lumotlar Bazasi Optimallashtirilishi", "API Ishlab Chiqish"]
+      },
+      "cloud": {
+        "title": "Bulut & Infratuzilma",
+        "description": "Biz barcha hajmdagi bizneslar uchun xavfsiz, kengaytiriladigan va tejamkor joriy etishlarni yaratish uchun bulut texnologiyalari va konteynerizatsiyadan foydalanamiz.",
+        "tags": ["Bulut Texnologiyalari", "Konteynerizatsiya", "Xavfsiz Joylashtirish"]
+      },
+      "practices": {
+        "title": "Ishlab Chiqish Amaliyotlari",
+        "description": "Bizning ish jarayonimiz sifat, ishonchlilik va tez yechimlar yetkazib berishni ta'minlash uchun CI/CD quvurlari, avtomatlashtirilgan sinovlar va chaqqon metodologiyalarni o'z ichiga oladi.",
+        "tags": ["CI/CD Quvurlari", "Avtomatlashtirilgan Sinovlar", "Chaqqon Metodologiya"]
+      }
+    },
+    "mission": {
+      "title": "Bizning Maqsadimiz",
+      "description": "Biznes o'sishi va texnologik innovatsiyalarni rag'batlantiruvchi yuqori sifatli dasturiy yechimlarni yetkazib berish"
+    },
+    "team": {
+      "title": "Bizning Jamoa",
+      "description": "Muvaffaqiyatimiz ortidagi iqtidorli mutaxassislar bilan tanishing",
+      "members": [
+        {
+          "name": "Jon Dou",
+          "role": "Bosh direktor va asoschisi",
+          "bio": "15 yildan ortiq texnologik rahbarlik tajribasiga ega Jon, bizning strategik ko'rinishimiz va o'sishimizni boshqaradi."
+        },
+        {
+          "name": "Jeyn Smit",
+          "role": "Texnik direktor",
+          "bio": "Jeyn bizning texnik yo'nalishimizni nazorat qiladi, texnologik innovatsiyalar sohasida yetakchi o'rnimizni ta'minlaydi."
+        },
+        {
+          "name": "Aleks Jonson",
+          "role": "Yetakchi dasturchi", 
+          "bio": "Aleks kengaytiriladigan ilovalarni yaratish va dasturchi jamoalarini yo'naltirish bo'yicha 10 yillik tajribaga ega."
+        },
+        {
+          "name": "Sara Vilyams",
+          "role": "UX/UI direktori",
+          "bio": "Sara estetika va funksionallikni birlashtirib, tushunarli va yoqimli foydalanuvchi tajribasini yaratadi."
+        }
+      ]
+    },
+    "milestones": {
+      "title": "Muvaffaqiyatlar",
+      "description": "O'sish va muvaffaqiyat yo'limiz",
+      "items": [
+        {
+          "year": "2015",
+          "title": "Kompaniya Tashkil Etildi",
+          "description": "OS TrustTech ishonchli dasturiy yechimlarni yaratish maqsadida tashkil etildi."
+        },
+        {
+          "year": "2017",
+          "title": "Birinchi Yirik Mijoz",
+          "description": "Birinchi korporativ mijozimizni jalb qildik va muvaffaqiyatli bank dasturiy tizimini yetkazib berdik."
+        },
+        {
+          "year": "2019",
+          "title": "Jamoaning Kengayishi",
+          "description": "Jamoamizni 25 nafar mutaxassisga ko'paytirdik va yangi ishlab chiqarish markazini ochdik."
+        },
+        {
+          "year": "2021",
+          "title": "Xalqaro Mavjudlik",
+          "description": "Yevropa va Osiyoda xalqaro mijozlarga xizmat ko'rsatish uchun faoliyatimizni kengaytirdik."
+        },
+        {
+          "year": "2023",
+          "title": "Innovatsiya Mukofoti",
+          "description": "Texnologiya sanoatiga qo'shgan hissamiz uchun Milliy Innovatsiya Mukofotini qabul qildik."
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "Bizning Xizmatlar",
+    "hero": {
+      "title": "Bizning Xizmatlar",
+      "description": "Biznesingiz ehtiyojlariga moslashtirilgan dasturiy yechimlar"
+    },
+    "offer": {
+      "title": "Biz Nimani Taklif Qilamiz",
+      "description": "Barcha dasturiy ta'minot ishlab chiqish ehtiyojlaringiz uchun to'liq yechimlar"
+    },
+    "core": {
+      "title": "Bizning Asosiy Xizmatlarimiz",
+      "description": "Asosiy xizmatlarimizning batafsil ko'rinishi"
+    },
+    "process": {
+      "title": "Bizning Ishlab Chiqish Jarayonimiz",
+      "description": "Loyiha muvaffaqiyatini ta'minlash uchun tizimli yondashuv",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Kashfiyot",
+          "description": "Biz sizning biznesingiz, maqsadlaringiz va loyiha talablaringizni o'rganamiz"
+        },
+        {
+          "step": "02",
+          "title": "Rejalashtirish",
+          "description": "Vaqt jadvali, xususiyatlar va natijalar bilan yo'l xaritasini yaratish"
+        },
+        {
+          "step": "03",
+          "title": "Dizayn",
+          "description": "Foydalanuvchi tajribasi va yechimingizning vizual dizaynini yaratish"
+        },
+        {
+          "step": "04",
+          "title": "Ishlab Chiqish",
+          "description": "Yechimingizni toza, saqlanadigan kod bilan yaratish"
+        },
+        {
+          "step": "05",
+          "title": "Sinovdan O'tkazish",
+          "description": "Hamma narsa mukammal ishlashini ta'minlash uchun puxta sifat nazorati"
+        },
+        {
+          "step": "06",
+          "title": "Joriy Etish",
+          "description": "Yechimingizni ishga tushirish va doimiy qo'llab-quvvatlashni ta'minlash"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Loyihangizni boshlashga tayyormisiz?",
+      "description": "G'oyalaringizni hayotga tatbiq etishda qanday yordam berishimiz mumkinligini muhokama qilish uchun bugun biz bilan bog'laning",
+      "button": "Biz bilan bog'laning"
+    },
+    "webdev": {
+      "title": "Veb-ishlab chiqish",
+      "description": "Eng so'nggi texnologiyalar bilan yaratilgan maxsus veb-saytlar va veb-ilovalar",
+      "features": [
+        "Moslashuvchan veb-ilovalar",
+        "Progressive Web Apps (PWA)",
+        "Elektron tijorat platformalari",
+        "Maxsus CMS yechimlari",
+        "API ishlab chiqish va integratsiyasi"
+      ]
+    },
+    "mobiledev": {
+      "title": "Mobil Ilova Ishlab Chiqish",
+      "description": "iOS va Android uchun tug'ma va kross-platforma mobil ilovalar",
+      "features": [
+        "iOS uchun native ishlab chiqish",
+        "Android uchun native ishlab chiqish",
+        "Kross-platforma (React Native, Flutter)",
+        "Mobil ilovani qayta dizayn qilish va optimallashtirish",
+        "App Store-ga yuborish bo'yicha yordam"
+      ]
+    },
+    "uiux": {
+      "title": "UI/UX Dizayn",
+      "description": "Foydalanuvchi tajribasini va qoniqishini oshiradigan, foydalanuvchiga yo'naltirilgan dizayn",
+      "features": [
+        "Foydalanuvchi tadqiqoti va personalar",
+        "Ma'lumot arxitekturasi",
+        "Wireframing va prototiplash",
+        "Vizual dizayn va brending",
+        "Foydalanish qulayligi sinovlari"
+      ]
+    },
+    "qa": {
+      "title": "Sifat Nazorati va Test",
+      "description": "Dasturiy ta'minotingiz xatosiz va ishonchli ishlashini ta'minlaydigan keng qamrovli testlash",
+      "features": [
+        "Qo'lda testlash",
+        "Avtomatlashtirilgan testlash",
+        "Ishlash samaradorligini testlash",
+        "Xavfsizlik testlari",
+        "Sifatni nazorat qilish jarayonini joriy etish"
+      ]
+    },
+    "database": {
+      "title": "Ma'lumotlar Bazasi Yechimlari",
+      "description": "Biznesingiz uchun samarali ma'lumotlarni saqlash va boshqarish yechimlari",
+      "features": [
+        "Ma'lumotlar bazasini loyihalash va modellashtirish",
+        "SQL va NoSQL implementatsiyalari",
+        "Ma'lumotlarni migratsiya va integratsiyasi",
+        "Ma'lumotlar bazasi unumdorligini optimallashtirish",
+        "Zaxira va tiklash yechimlari"
+      ]
+    },
+    "devops": {
+      "title": "DevOps va Bulut",
+      "description": "Ishlab chiqish va operatsion jarayonlaringizni takomillashtiring",
+      "features": [
+        "CI/CD quvurlarni o'rnatish",
+        "Konteyner orkestrlash (Docker, Kubernetes)",
+        "Bulutga ko'chirish (AWS, Azure, GCP)",
+        "Kod sifatidagi infratuzilma",
+        "Monitoring va jurnal yuritish yechimlari"
+      ]
+    },
+    "security": {
+      "title": "Kiberhimoya",
+      "description": "Raqamli aktivlaringizni mustahkam xavfsizlik choralari bilan himoya qiling",
+      "features": [
+        "Xavfsizlikni baholash va audit",
+        "Kirish sinovlari",
+        "Xavfsizlikni joriy etish",
+        "Muvofiqlik bo'yicha maslahatlar (GDPR, HIPAA)",
+        "Jamoalar uchun xavfsizlik bo'yicha o'qitish"
+      ]
+    },
+    "maintenance": {
+      "title": "Xizmat Ko'rsatish va Qo'llab-quvvatlash",
+      "description": "Dasturiy ta'minotingiz uzluksiz ishlashini ta'minlang",
+      "features": [
+        "24/7 texnik qo'llab-quvvatlash",
+        "Muntazam yangilanishlar va tuzatishlar",
+        "Ishlash samaradorligini nazorat qilish",
+        "Xatolarni tuzatish va muammolarni bartaraf etish",
+        "Tizim holati tekshiruvlari"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Bizning Loyihalar",
+    "filter": {
+      "all": "Barchasi",
+      "web": "Veb",
+      "mobile": "Mobil",
+      "design": "Dizayn"
+    },
+    "description": "Muvaffaqiyatli mijoz loyihalari portfoliomizni o'rganing",
+    "buttons": {
+      "viewLive": "Ko'rish",
+      "sourceCode": "Manba Kodi"
+    },
+    "testimonials": {
+      "title": "Mijozlar Fikrlari",
+      "description": "Mijozlarimiz biz haqimizda nima deyishadi",
+      "items": [
+        {
+          "name": "Abbos Karimov",
+          "company": "ABC Korporatsiyasi",
+          "comment": "OS TrustTech jamoasi loyihamizni o'z vaqtida bajardi va bizning kutganlarimizdan ham oshib tushdi. Ularning texnik mahorati va muloqoti ajoyib edi."
+        },
+        {
+          "name": "Zarina Aliyeva",
+          "company": "XYZ Sanoati",
+          "comment": "OS TrustTech bilan ishlash ajoyib tajriba bo'ldi. Ular bizning talablarimizni mukammal tushunib, aynan bizga kerak bo'lgan narsani yaratishdi."
+        },
+        {
+          "name": "Bobur Rahimov",
+          "company": "Akme Korxonalari",
+          "comment": "OS TrustTech tomonidan ishlab chiqilgan mobil ilova bizning biznes operatsiyalarimizni o'zgartirib yubordi. Ularning doimiy qo'llab-quvvatlashi juda muhim bo'ldi."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Loyihangizni boshlashga tayyormisiz?",
+      "description": "G'oyalaringizni qanday amalga oshirishimiz mumkinligini muhokama qilish uchun bugun biz bilan bog'laning",
+      "button": "Boshlash"
+    },
+    "projects": {
+      "ecommerce": {
+        "title": "Elektron Tijorat Platformasi",
+        "description": "Mijoz portali, administrator paneli va inventarni boshqarish imkoniyatlariga ega to'liq elektron tijorat yechimi."
+      },
+      "banking": {
+        "title": "Bank Mobil Ilovasi",
+        "description": "Tranzaksiyalar tarixi, to'lovlar va hisoblarni boshqarish imkoniyatlariga ega xavfsiz mobil bank ilovasi."
+      },
+      "healthcare": {
+        "title": "Sog'liqni Saqlash Boshqaruv Tizimi",
+        "description": "Bemorlar ma'lumotlari, uchrashuvlar jadvali va hisob-kitoblar uchun keng qamrovli sog'liqni saqlash platformasi."
+      },
+      "realestate": {
+        "title": "Ko'chmas Mulk Marketpleysi",
+        "description": "Virtual sayohatlar va ipoteka kalkulyatori bilan ko'chmas mulkni ro'yxatga olish va qidirish platformasi."
+      },
+      "fitness": {
+        "title": "Fitnes Kuzatish Ilovasi",
+        "description": "Mashg'ulot rejalari, progress monitoringi va ijtimoiy funksiyalarga ega mobil fitnes kuzatuvchi."
+      },
+      "supplychain": {
+        "title": "Ta'minot Zanjiri Boshqaruv Tizimi",
+        "description": "Inventarni kuzatish, buyurtmalarni boshqarish va tahliliy ma'lumotlarga ega to'liq ta'minot zanjiri yechimi."
+      }
+    }
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Sizdan eshitishdan xursandmiz. Bizning jamoamiz bilan bog'laning.",
+    "form": {
+      "name": "To'liq Ismingiz",
+      "email": "Elektron Pochta",
+      "subject": "Mavzu",
+      "message": "Xabaringiz",
+      "submit": "Xabar Yuborish",
+      "title": "Xabar Yuborish",
+      "description": "Sizdan eshitishga xursandmiz. So'rovlar, hamkorlik yoki loyihangizni muhokama qilish uchun biz bilan bog'laning.",
+      "namePlaceholder": "To'liq ismingiz",
+      "emailPlaceholder": "Elektron pochta manzilingiz",
+      "subjectPlaceholder": "Xabaringiz mavzusi",
+      "messagePlaceholder": "Xabaringiz"
+    },
+    "info": "Aloqa Ma'lumotlari",
+    "phone": "+998 71 234 5678",
+    "email": "info@ostrusttech.uz",
+    "address": {
+      "title": "Ofisimizga tashrif buyuring",
+      "street": "Texnologiyalar ko'chasi 123",
+      "city": "Toshkent",
+      "country": "O'zbekiston"
+    },
+    "hours": {
+      "title": "Ish Vaqti",
+      "weekdays": "Dushanba - Juma",
+      "saturday": "Shanba",
+      "sunday": "Yakshanba",
+      "weekdayHours": "9:00 - 18:00",
+      "saturdayHours": "10:00 - 16:00",
+      "sundayHours": "Yopiq"
+    },
+    "map": {
+      "title": "Bizni toping",
+      "description": "Ofisimizga tashrif buyuring yoki onlayn tarzda bog'laning"
+    },
+    "faq": {
+      "title": "Ko'p beriladigan savollar",
+      "description": "Bizning xizmatlarimiz haqida ko'p beriladigan savollarga javoblarni toping",
+      "questions": [
+        {
+          "question": "Qanday xizmatlarni taklif qilasiz?",
+          "answer": "Biz veb-ishlab chiqish, mobil ilovalarni ishlab chiqish, UX/UI dizayn va bulutli yechimlarni o'z ichiga olgan dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz."
+        },
+        {
+          "question": "Loyihani ishlab chiqish qanchaga tushadi?",
+          "answer": "Loyiha narxi talablar, murakkablik va vaqt doirasiga qarab o'zgaradi. Bepul maslahat va aniq ehtiyojlaringizga moslashtirilgan narx taklifi uchun biz bilan bog'laning."
+        },
+        {
+          "question": "Loyihani yakunlash qancha vaqt oladi?",
+          "answer": "Ishlab chiqish vaqti loyiha ko'lami va murakkabligiga bog'liq. Biz dastlabki maslahat davomida batafsil jadval taqdim etamiz."
+        },
+        {
+          "question": "Siz doimiy texnik xizmat ko'rsatish va qo'llab-quvvatlashni ta'minlaysizmi?",
+          "answer": "Ha, biz dasturiy ta'minotingiz ishga tushirilgandan so'ng uzluksiz ishlashini ta'minlash uchun turli xil texnik xizmat ko'rsatish va qo'llab-quvvatlash paketlarini taklif qilamiz."
+        }
+      ]
+    },
+    "success": "Rahmat! Xabaringiz muvaffaqiyatli yuborildi."
+  },
+  "footer": {
+    "rights": "© 2024 OS TrustTech. Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  }
+} 

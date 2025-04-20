@@ -1,0 +1,357 @@
+@import "tailwindcss";
+
+:root {
+  /* Light theme variables (default) */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-muted: #f5f7fa;
+  --bg-accent-subtle: #eef2ff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4b5563;
+  --text-muted: #717171;
+  --border: #e5e7eb;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-foreground: #ffffff;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --footer-bg: #ffffff;
+  --footer-border: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+/* Dark theme class - only applied when user explicitly sets dark mode */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --bg-card: #1f2937;
+  --bg-card-hover: #2d3748;
+  --bg-muted: #374151;
+  --bg-accent-subtle: #312e81;
+  --text-primary: #f9fafb;
+  --text-secondary: #e2e8f0; 
+  --text-muted: #9ca3af;
+  --border: #4b5563;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-foreground: #ffffff;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --footer-bg: #1f2937;
+  --footer-border: #4b5563;
+}
+
+html {
+  background-color: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar styles */
+nav.bg-white {
+  background-color: var(--background) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+nav .text-blue-600, 
+nav a.text-blue-600,
+nav .text-blue-600.dark\\:text-blue-400 {
+  color: var(--accent) !important;
+}
+
+nav a.hover\\:text-blue-600:hover,
+nav button.hover\\:text-blue-600:hover {
+  color: var(--accent) !important;
+}
+
+nav .text-gray-700, 
+nav .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+/* Language dropdown fixes */
+nav .absolute.right-0.mt-2.w-24.bg-white.dark\\:bg-gray-800,
+nav .bg-white.dark\\:bg-gray-800 {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow) !important;
+}
+
+nav a.text-gray-700.dark\\:text-gray-300,
+nav .text-gray-700.dark\\:text-gray-300 {
+  color: var(--text-secondary) !important;
+}
+
+nav a.text-indigo-600.dark\\:text-indigo-400,
+nav .text-indigo-600.dark\\:text-indigo-400 {
+  color: var(--accent) !important;
+}
+
+nav a.hover\\:bg-gray-100.dark\\:hover\\:bg-gray-700:hover,
+nav .hover\\:bg-gray-100.dark\\:hover\\:bg-gray-700:hover {
+  background-color: var(--bg-muted) !important;
+}
+
+nav a.hover\\:text-indigo-600.dark\\:hover\\:text-indigo-400:hover,
+nav .hover\\:text-indigo-600.dark\\:hover\\:text-indigo-400:hover {
+  color: var(--accent) !important;
+}
+
+/* Logo background */ 
+nav .bg-blue-600 {
+  background-color: var(--accent) !important;
+}
+
+/* Mobile menu and language dropdown */
+nav .hover\\:bg-gray-100:hover {
+  background-color: var(--bg-muted) !important;
+}
+
+/* Additional navbar text color fixes */
+nav .dark\\:text-white,
+nav .dark\\:text-gray-300 {
+  color: var(--text-primary) !important;
+}
+
+nav .dark\\:text-gray-400 {
+  color: var(--text-secondary) !important;
+}
+
+nav .dark\\:bg-gray-700,
+nav .dark\\:bg-gray-800,
+nav .dark\\:bg-gray-900 {
+  background-color: var(--bg-card) !important;
+}
+
+nav .dark\\:border-gray-700 {
+  border-color: var(--border) !important;
+}
+
+/* Footer styles */
+footer.bg-white {
+  background-color: var(--footer-bg) !important;
+  border-color: var(--footer-border) !important;
+}
+
+footer.dark\:bg-gray-900 {
+  background-color: var(--footer-bg) !important;
+}
+
+footer .border-t.border-gray-200 {
+  border-color: var(--footer-border) !important;
+}
+
+footer .border-t.dark\:border-gray-800 {
+  border-color: var(--footer-border) !important;
+}
+
+footer .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+footer .text-gray-600 {
+  color: var(--text-secondary) !important;
+}
+
+footer .dark\:text-white {
+  color: var(--text-primary) !important;
+}
+
+footer .dark\:text-gray-400 {
+  color: var(--text-secondary) !important;
+}
+
+footer a.hover\:text-indigo-600:hover,
+footer .hover\:text-indigo-600:hover {
+  color: var(--accent) !important;
+}
+
+footer a.dark\:hover\:text-indigo-400:hover,
+footer .dark\:hover\:text-indigo-400:hover {
+  color: var(--accent-hover) !important;
+}
+
+footer .text-indigo-600 {
+  color: var(--accent) !important;
+}
+
+footer .dark\:text-indigo-400 {
+  color: var(--accent) !important;
+}
+
+/* More specific footer overrides */
+footer .bg-blue-600,
+footer svg.text-blue-600,
+footer .text-blue-600.dark\\:text-blue-400,
+footer .dark\\:text-blue-400 {
+  color: var(--accent) !important;
+}
+
+footer a.hover\\:text-blue-600:hover,
+footer a.hover\\:text-blue-400:hover,
+footer a:hover .dark\\:hover\\:text-blue-400,
+footer .hover\\:text-blue-800:hover {
+  color: var(--accent-hover) !important;
+}
+
+/* CTA Sections */
+.bg-blue-600,
+section.bg-blue-600 {
+  background-color: var(--accent) !important;
+}
+
+.text-blue-700 {
+  color: var(--accent-hover) !important;
+}
+
+.hover\\:bg-blue-50:hover {
+  background-color: #f5f3ff !important; /* Lighter indigo */
+}
+
+/* Override Tailwind dark mode classes in light mode */
+.bg-gray-800:not(.dark .bg-gray-800), 
+.bg-gray-900:not(.dark .bg-gray-900) {
+  background-color: var(--bg-card) !important;
+}
+
+.bg-gray-50:not(.dark .bg-gray-50),
+.bg-gray-100:not(.dark .bg-gray-100),
+.bg-gray-200:not(.dark .bg-gray-200) {
+  background-color: var(--bg-muted) !important;
+}
+
+/* Icon background colors */
+.bg-blue-100:not(.dark .bg-blue-100) {
+  background-color: var(--bg-accent-subtle) !important;
+}
+
+.bg-blue-600:not(.dark .bg-blue-600) {
+  background-color: var(--accent) !important;
+  color: var(--accent-foreground) !important;
+}
+
+/* Timeline and milestone styling */
+.bg-blue-200 {
+  background-color: #e0e7ff !important; /* Light indigo */
+}
+
+.text-blue-100 {
+  color: #e0e7ff !important; /* Light indigo */
+}
+
+.bg-blue-900 {
+  background-color: #312e81 !important; /* Dark indigo */
+}
+
+/* Style adjustments for service cards */
+.text-blue-600:not(.dark .text-blue-600) {
+  color: var(--accent) !important;
+}
+
+.text-blue-700:not(.dark .text-blue-700) {
+  color: var(--accent-hover) !important;
+}
+
+/* Text colors */
+.text-gray-900:not(.dark .text-gray-900) {
+  color: var(--text-primary) !important;
+}
+
+.text-gray-600:not(.dark .text-gray-600), 
+.text-gray-700:not(.dark .text-gray-700) {
+  color: var(--text-secondary) !important;
+}
+
+.text-gray-400:not(.dark .text-gray-400),
+.text-gray-500:not(.dark .text-gray-500) {
+  color: var(--text-muted) !important;
+}
+
+/* Service card specific styles */
+.bg-white.rounded-lg.shadow-md.p-6:not(.dark .bg-white.rounded-lg.shadow-md.p-6) {
+  background-color: var(--bg-card) !important;
+  box-shadow: var(--shadow) !important;
+  border: 1px solid var(--border);
+}
+
+.bg-white.rounded-lg.shadow-md.p-6:not(.dark .bg-white.rounded-lg.shadow-md.p-6):hover {
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.w-16.h-16.bg-blue-100.rounded-2xl:not(.dark .w-16.h-16.bg-blue-100.rounded-2xl) {
+  background-color: var(--bg-accent-subtle) !important;
+}
+
+.w-16.h-16.bg-blue-100.rounded-2xl:not(.dark .w-16.h-16.bg-blue-100.rounded-2xl) .w-8.h-8 {
+  color: var(--accent) !important;
+}
+
+/* Button and interactive styles */
+.hover\:bg-blue-700:hover:not(.dark .hover\:bg-blue-700:hover) {
+  background-color: var(--accent-hover) !important;
+}
+
+.hover\:text-blue-800:hover:not(.dark .hover\:text-blue-800:hover) {
+  color: var(--accent-hover) !important;
+}
+
+/* Shadow adjustments */
+.shadow-md:not(.dark .shadow-md) {
+  box-shadow: var(--shadow) !important;
+}
+
+.hover\:shadow-lg:hover:not(.dark .hover\:shadow-lg:hover) {
+  box-shadow: var(--shadow-hover) !important;
+}
+
+/* Custom clip path for hero section */
+.clip-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  shape-margin: 20px;
+}
+
+/* 3D Effect Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+}
+
+@keyframes sheen {
+  0%, 100% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+
+.animate-sheen {
+  animation: sheen 8s ease-in-out infinite;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -12,6 +12,7 @@ import {
   FiShield,
   FiRefreshCw,
 } from "react-icons/fi";
+import { PageProps } from "../../../../.next/types/app/layout";
 
 // Add these type definitions after imports and before metadata
 interface ProcessStep {
@@ -36,59 +37,100 @@ export const metadata: Metadata = {
 
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`../../../../public/locales/${locale}/common.json`);
+    const translations = await import(
+      `../../../../public/locales/${locale}/common.json`
+    );
     return translations.default;
   } catch (error) {
     console.error(`Error loading translations for locale ${locale}:`, error);
     // Fall back to English
-    const fallbackTranslations = await import(`../../../../public/locales/en/common.json`);
+    const fallbackTranslations = await import(
+      `../../../../public/locales/en/common.json`
+    );
     return fallbackTranslations.default;
   }
 }
 
-export default async function ServicesPage({ 
-  params 
-}: { 
-  params: { locale: string } 
-}) {
+export default async function ServicesPage({ params }: PageProps) {
   // Get the locale from params - no need to await, direct access is fine
-  const locale = params.locale || 'en';
+  const resolvedParams = await params;
+  const locale = String(resolvedParams.locale || "en");
   const translations = await getTranslations(locale);
 
   console.log(`Services page loaded with locale: ${locale}`);
-  
+
   // Services translations with fallbacks
   const servicesTranslations = {
     title: translations.services?.title || "Our Services",
     hero: {
       title: translations.services?.hero?.title || "Our Services",
-      description: translations.services?.hero?.description || "Comprehensive software solutions tailored to your business needs"
+      description:
+        translations.services?.hero?.description ||
+        "Comprehensive software solutions tailored to your business needs",
     },
     offer: {
       title: translations.services?.offer?.title || "What We Offer",
-      description: translations.services?.offer?.description || "End-to-end solutions for all your software development needs"
+      description:
+        translations.services?.offer?.description ||
+        "End-to-end solutions for all your software development needs",
     },
     core: {
       title: translations.services?.core?.title || "Our Core Services",
-      description: translations.services?.core?.description || "Detailed look at our primary service offerings"
+      description:
+        translations.services?.core?.description ||
+        "Detailed look at our primary service offerings",
     },
     process: {
       title: translations.services?.process?.title || "Our Development Process",
-      description: translations.services?.process?.description || "A systematic approach to ensure project success",
+      description:
+        translations.services?.process?.description ||
+        "A systematic approach to ensure project success",
       steps: translations.services?.process?.steps || [
-        { step: "01", title: "Discovery", description: "We learn about your business, goals, and project requirements" },
-        { step: "02", title: "Planning", description: "Creating a roadmap with timelines, features, and deliverables" },
-        { step: "03", title: "Design", description: "Crafting user experience and visual design of your solution" },
-        { step: "04", title: "Development", description: "Building your solution with clean, maintainable code" },
-        { step: "05", title: "Testing", description: "Rigorous quality assurance to ensure everything works perfectly" },
-        { step: "06", title: "Deployment", description: "Launching your solution and providing continued support" }
-      ]
+        {
+          step: "01",
+          title: "Discovery",
+          description:
+            "We learn about your business, goals, and project requirements",
+        },
+        {
+          step: "02",
+          title: "Planning",
+          description:
+            "Creating a roadmap with timelines, features, and deliverables",
+        },
+        {
+          step: "03",
+          title: "Design",
+          description:
+            "Crafting user experience and visual design of your solution",
+        },
+        {
+          step: "04",
+          title: "Development",
+          description: "Building your solution with clean, maintainable code",
+        },
+        {
+          step: "05",
+          title: "Testing",
+          description:
+            "Rigorous quality assurance to ensure everything works perfectly",
+        },
+        {
+          step: "06",
+          title: "Deployment",
+          description:
+            "Launching your solution and providing continued support",
+        },
+      ],
     },
     cta: {
-      title: translations.services?.cta?.title || "Ready to start your project?",
-      description: translations.services?.cta?.description || "Contact us today to discuss how we can help bring your ideas to life",
-      button: translations.services?.cta?.button || "Get in Touch"
-    }
+      title:
+        translations.services?.cta?.title || "Ready to start your project?",
+      description:
+        translations.services?.cta?.description ||
+        "Contact us today to discuss how we can help bring your ideas to life",
+      button: translations.services?.cta?.button || "Get in Touch",
+    },
   };
 
   // Extended services data with translations
@@ -96,7 +138,9 @@ export default async function ServicesPage({
     {
       id: "webdev",
       title: translations.services?.webdev?.title || "Web Development",
-      description: translations.services?.webdev?.description || "Custom websites and web applications built with the latest technologies",
+      description:
+        translations.services?.webdev?.description ||
+        "Custom websites and web applications built with the latest technologies",
       icon: <FiCode className="w-8 h-8" />,
       features: translations.services?.webdev?.features || [
         "Responsive web applications",
@@ -109,8 +153,12 @@ export default async function ServicesPage({
     },
     {
       id: "mobiledev",
-      title: translations.services?.mobiledev?.title || "Mobile Application Development",
-      description: translations.services?.mobiledev?.description || "Native and cross-platform mobile apps for iOS and Android",
+      title:
+        translations.services?.mobiledev?.title ||
+        "Mobile Application Development",
+      description:
+        translations.services?.mobiledev?.description ||
+        "Native and cross-platform mobile apps for iOS and Android",
       icon: <FiSmartphone className="w-8 h-8" />,
       features: translations.services?.mobiledev?.features || [
         "Native iOS development",
@@ -124,7 +172,9 @@ export default async function ServicesPage({
     {
       id: "uiux",
       title: translations.services?.uiux?.title || "UI/UX Design",
-      description: translations.services?.uiux?.description || "User-centered design that enhances user experience and satisfaction",
+      description:
+        translations.services?.uiux?.description ||
+        "User-centered design that enhances user experience and satisfaction",
       icon: <FiLayout className="w-8 h-8" />,
       features: translations.services?.uiux?.features || [
         "User research and personas",
@@ -138,7 +188,9 @@ export default async function ServicesPage({
     {
       id: "qa",
       title: translations.services?.qa?.title || "QA & Testing",
-      description: translations.services?.qa?.description || "Comprehensive testing to ensure your software is bug-free and reliable",
+      description:
+        translations.services?.qa?.description ||
+        "Comprehensive testing to ensure your software is bug-free and reliable",
       icon: <FiCheckCircle className="w-8 h-8" />,
       features: translations.services?.qa?.features || [
         "Manual testing",
@@ -152,7 +204,9 @@ export default async function ServicesPage({
     {
       id: "database",
       title: translations.services?.database?.title || "Database Solutions",
-      description: translations.services?.database?.description || "Efficient data storage and management solutions for your business",
+      description:
+        translations.services?.database?.description ||
+        "Efficient data storage and management solutions for your business",
       icon: <FiDatabase className="w-8 h-8" />,
       features: translations.services?.database?.features || [
         "Database design and modeling",
@@ -166,7 +220,9 @@ export default async function ServicesPage({
     {
       id: "devops",
       title: translations.services?.devops?.title || "DevOps & Cloud",
-      description: translations.services?.devops?.description || "Streamline your development and operational processes",
+      description:
+        translations.services?.devops?.description ||
+        "Streamline your development and operational processes",
       icon: <FiServer className="w-8 h-8" />,
       features: translations.services?.devops?.features || [
         "CI/CD pipeline setup",
@@ -180,7 +236,9 @@ export default async function ServicesPage({
     {
       id: "security",
       title: translations.services?.security?.title || "Cybersecurity",
-      description: translations.services?.security?.description || "Protect your digital assets with robust security measures",
+      description:
+        translations.services?.security?.description ||
+        "Protect your digital assets with robust security measures",
       icon: <FiShield className="w-8 h-8" />,
       features: translations.services?.security?.features || [
         "Security assessment and auditing",
@@ -193,8 +251,11 @@ export default async function ServicesPage({
     },
     {
       id: "maintenance",
-      title: translations.services?.maintenance?.title || "Maintenance & Support",
-      description: translations.services?.maintenance?.description || "Ensure your software continues to run smoothly",
+      title:
+        translations.services?.maintenance?.title || "Maintenance & Support",
+      description:
+        translations.services?.maintenance?.description ||
+        "Ensure your software continues to run smoothly",
       icon: <FiRefreshCw className="w-8 h-8" />,
       features: translations.services?.maintenance?.features || [
         "24/7 technical support",
@@ -210,12 +271,12 @@ export default async function ServicesPage({
   return (
     <div>
       {/* Hero Section */}
-      <section 
+      <section
         className="relative py-24"
-        style={{ 
+        style={{
           backgroundImage: "url('/images/hero-bg.svg')",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-gray-900 opacity-20"></div>
@@ -245,7 +306,7 @@ export default async function ServicesPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
-              <div 
+              <div
                 key={service.id}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
               >
@@ -259,12 +320,18 @@ export default async function ServicesPage({
                   {service.description}
                 </p>
                 <ul className="space-y-2 mt-4">
-                  {service.features.slice(0, 3).map((feature: string, idx: number) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                      <span className="text-gray-600 dark:text-gray-400 text-sm">{feature}</span>
-                    </li>
-                  ))}
+                  {service.features
+                    .slice(0, 3)
+                    .map((feature: string, idx: number) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="text-blue-600 dark:text-blue-400 mr-2">
+                          •
+                        </span>
+                        <span className="text-gray-600 dark:text-gray-400 text-sm">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             ))}
@@ -285,9 +352,11 @@ export default async function ServicesPage({
           </div>
 
           {services.slice(0, 4).map((service, index) => (
-            <div 
-              key={service.id} 
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center mb-20 last:mb-0`}
+            <div
+              key={service.id}
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } items-center mb-20 last:mb-0`}
             >
               <div className="w-full md:w-1/2 p-6">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
@@ -299,16 +368,20 @@ export default async function ServicesPage({
                 <ul className="space-y-3">
                   {service.features.map((feature: string, idx: number) => (
                     <li key={idx} className="flex items-start">
-                      <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                      <span className="text-gray-600 dark:text-gray-300">{feature}</span>
+                      <span className="text-blue-600 dark:text-blue-400 mr-2">
+                        •
+                      </span>
+                      <span className="text-gray-600 dark:text-gray-300">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="w-full md:w-1/2 p-6">
                 <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-                  <Image 
-                    src={service.image} 
+                  <Image
+                    src={service.image}
                     alt={service.title}
                     fill
                     className="object-cover"
@@ -333,24 +406,26 @@ export default async function ServicesPage({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {servicesTranslations.process.steps.map((process: ProcessStep, index: number) => (
-              <div 
-                key={index}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 relative overflow-hidden"
-              >
-                <div className="text-5xl font-bold text-blue-100 dark:text-blue-900 absolute right-4 top-4 opacity-60">
-                  {process.step}
+            {servicesTranslations.process.steps.map(
+              (process: ProcessStep, index: number) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 relative overflow-hidden"
+                >
+                  <div className="text-5xl font-bold text-blue-100 dark:text-blue-900 absolute right-4 top-4 opacity-60">
+                    {process.step}
+                  </div>
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                      {process.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {process.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="relative z-10">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    {process.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {process.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>
@@ -364,7 +439,7 @@ export default async function ServicesPage({
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             {servicesTranslations.cta.description}
           </p>
-          <Link 
+          <Link
             href={`/${locale}/contact`}
             className="inline-flex items-center bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-md text-lg font-medium transition-colors shadow-lg"
           >
@@ -374,4 +449,4 @@ export default async function ServicesPage({
       </section>
     </div>
   );
-} 
+}

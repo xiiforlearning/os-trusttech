@@ -1,24 +1,29 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FiArrowRight, FiCode, FiSmartphone, FiLayout, FiCheckCircle } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiCode,
+  FiSmartphone,
+  FiLayout,
+  FiCheckCircle,
+} from "react-icons/fi";
+import { PageProps } from "../../../.next/types/app/layout";
 
 // Metadata will be inherited from the locale layout
 
 async function getTranslations(locale: string) {
-  const translations = await import(`../../../public/locales/${locale}/common.json`);
+  const translations = await import(
+    `../../../public/locales/${locale}/common.json`
+  );
   return translations.default;
 }
 
-export default async function HomePage({ 
-  params 
-}: { 
-  params: { locale: string } 
-}) {
+export default async function HomePage({ params }: PageProps) {
   // In Next.js 15+, we need to handle params differently
   // Await the params object first, then access the properties
   const resolvedParams = await params;
-  const locale = String(resolvedParams.locale || 'en');
+  const locale = String(resolvedParams.locale || "en");
   const translations = await getTranslations(locale);
 
   // Mock client logos
@@ -33,18 +38,22 @@ export default async function HomePage({
   return (
     <div>
       {/* Hero Section with Background Image */}
-      <div 
+      <div
         className="relative py-24 px-4 text-center text-white min-h-[80vh] flex items-center justify-center"
-        style={{ 
+        style={{
           backgroundImage: "url('/images/hero-bg.svg')",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       >
         <div className="max-w-4xl mx-auto z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">{translations.home.hero.title}</h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90">{translations.home.hero.subtitle}</p>
-          <Link 
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            {translations.home.hero.title}
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-white/90">
+            {translations.home.hero.subtitle}
+          </p>
+          <Link
             href={`/${locale}/contact`}
             className="inline-flex items-center bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors shadow-lg"
           >
@@ -79,7 +88,7 @@ export default async function HomePage({
                 {translations.services.webdev.description}
               </p>
             </div>
-            
+
             {/* Service Card 2 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
@@ -92,7 +101,7 @@ export default async function HomePage({
                 {translations.services.mobiledev.description}
               </p>
             </div>
-            
+
             {/* Service Card 3 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
@@ -105,7 +114,7 @@ export default async function HomePage({
                 {translations.services.uiux.description}
               </p>
             </div>
-            
+
             {/* Service Card 4 */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
@@ -148,7 +157,9 @@ export default async function HomePage({
 
           <div className="max-w-4xl mx-auto">
             <div className="w-full h-[400px] bg-gray-200 dark:bg-gray-700 rounded-xl flex items-center justify-center">
-              <p className="text-gray-600 dark:text-gray-400">{translations.home.interactive.placeholder}</p>
+              <p className="text-gray-600 dark:text-gray-400">
+                {translations.home.interactive.placeholder}
+              </p>
             </div>
           </div>
         </div>
@@ -168,8 +179,8 @@ export default async function HomePage({
 
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             {clients.map((client, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="relative w-32 h-32 grayscale hover:grayscale-0 transition-all"
               >
                 <Image
@@ -207,4 +218,4 @@ export default async function HomePage({
       </section>
     </div>
   );
-} 
+}

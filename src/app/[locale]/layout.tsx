@@ -4,11 +4,14 @@ import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
 import ClientThemeWrapper from "@/components/ClientThemeWrapper";
 import AnalyticsWrapper from "@/components/AnalyticsWrapper";
+import { PageProps } from "../../../.next/types/app/layout";
 
 // This is needed to use server components with translation files
 async function getTranslations(locale: string) {
   try {
-    const translations = await import(`../../../public/locales/${locale}/common.json`);
+    const translations = await import(
+      `../../../public/locales/${locale}/common.json`
+    );
     return translations.default;
   } catch (error) {
     notFound();
@@ -16,17 +19,15 @@ async function getTranslations(locale: string) {
 }
 
 export async function generateMetadata({
-  params
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+  params,
+}: PageProps): Promise<Metadata> {
   // Await the params object first
   const resolvedParams = await params;
-  const locale = String(resolvedParams.locale || 'en');
-  
+  const locale = String(resolvedParams.locale || "en");
+
   // Get the translations based on the locale
   const translations = await getTranslations(locale);
-  
+
   return {
     title: "OS TrustTech",
     description: "Innovative Software Development Company based in Uzbekistan",
@@ -43,21 +44,24 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
   // Await the params object first
   const resolvedParams = await params;
-  const locale = String(resolvedParams.locale || 'en');
-  
+  const locale = String(resolvedParams.locale || "en");
+
   // Get translations for the navbar and footer
   const translations = await getTranslations(locale);
-  
+
   return (
     <html lang={locale} suppressHydrationWarning className="light">
-      <body className="bg-white text-gray-900 accent-indigo-600" suppressHydrationWarning>
+      <body
+        className="bg-white text-gray-900 accent-indigo-600"
+        suppressHydrationWarning
+      >
         <ClientThemeWrapper>
           <AnalyticsWrapper>
             <Navbar translations={translations} locale={locale} />

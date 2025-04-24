@@ -103,58 +103,57 @@ export default async function ProjectsPage({ params }: PageProps) {
       button: translations.projects?.cta?.button || "Get Started",
     },
     projects: {
-      ecommerce: {
+      tvcom: {
         title:
-          translations.projects?.projects?.ecommerce?.title ||
+          translations.projects?.projects?.tvcom?.title ||
           "E-commerce Platform",
         description:
-          translations.projects?.projects?.ecommerce?.description ||
+          translations.projects?.projects?.tvcom?.description ||
           "A complete e-commerce solution with customer portal, admin dashboard, and inventory management.",
       },
-      banking: {
+      mias: {
         title:
-          translations.projects?.projects?.banking?.title ||
-          "Banking Mobile App",
+          translations.projects?.projects?.mias?.title || "Banking Mobile App",
         description:
-          translations.projects?.projects?.banking?.description ||
+          translations.projects?.projects?.mias?.description ||
           "Secure mobile banking application with transaction history, bill payments, and account management.",
       },
-      healthcare: {
+      comnet: {
         title:
-          translations.projects?.projects?.healthcare?.title ||
+          translations.projects?.projects?.comnet?.title ||
           "Healthcare Management System",
         description:
-          translations.projects?.projects?.healthcare?.description ||
+          translations.projects?.projects?.comnet?.description ||
           "Comprehensive healthcare platform for patient records, appointment scheduling, and billing.",
       },
-      realestate: {
+      haqq: {
         title:
-          translations.projects?.projects?.realestate?.title ||
+          translations.projects?.projects?.haqq?.title ||
           "Real Estate Marketplace",
         description:
-          translations.projects?.projects?.realestate?.description ||
+          translations.projects?.projects?.haqq?.description ||
           "Property listing and search platform with virtual tours and mortgage calculator.",
       },
-      fitness: {
+      tvcomuz: {
         title:
-          translations.projects?.projects?.fitness?.title ||
+          translations.projects?.projects?.tvcomuz?.title ||
           "Fitness Tracking App",
         description:
-          translations.projects?.projects?.fitness?.description ||
+          translations.projects?.projects?.tvcomuz?.description ||
           "Mobile fitness tracker with workout plans, progress monitoring, and social features.",
       },
-      supplychain: {
+      zoje: {
         title:
-          translations.projects?.projects?.supplychain?.title ||
+          translations.projects?.projects?.zoje?.title ||
           "Supply Chain Management System",
         description:
-          translations.projects?.projects?.supplychain?.description ||
+          translations.projects?.projects?.zoje?.description ||
           "End-to-end supply chain solution with inventory tracking, order management, and analytics.",
       },
     },
     buttons: {
       viewLive: translations.projects?.buttons?.viewLive || "View Live",
-      sourceCode: translations.projects?.buttons?.sourceCode || "Source Code",
+      // sourceCode: translations.projects?.buttons?.sourceCode || "Source Code",
     },
   };
 
@@ -162,19 +161,20 @@ export default async function ProjectsPage({ params }: PageProps) {
   const projects: ProjectItem[] = [
     {
       id: "project1",
-      title: projectsTranslations.projects.ecommerce.title,
-      description: projectsTranslations.projects.ecommerce.description,
-      image: "/images/hero-bg.svg",
-      category: "web",
-      technologies: ["React", "Node.js", "MongoDB", "AWS"],
-      link: "#",
-      githubLink: "#",
+      title: "TVCOM",
+      description: projectsTranslations.projects.tvcom.description,
+      image: "/images/tvcom.png",
+      category: "mobile",
+      technologies: ["React Native", "TypeScript", "Node.js", "AWS"],
+      link: "https://apps.apple.com/uz/app/tvcom/id6479690034",
+      githubLink:
+        "https://play.google.com/store/apps/details?id=uz.comnet.tvcomstb&hl=en",
     },
     {
       id: "project2",
-      title: projectsTranslations.projects.banking.title,
-      description: projectsTranslations.projects.banking.description,
-      image: "/images/hero-bg.svg",
+      title: "Mias transportation",
+      description: projectsTranslations.projects.mias.description,
+      image: "/images/mias.png",
       category: "mobile",
       technologies: ["React Native", "Redux", "Firebase", "Stripe"],
       link: "#",
@@ -182,41 +182,41 @@ export default async function ProjectsPage({ params }: PageProps) {
     },
     {
       id: "project3",
-      title: projectsTranslations.projects.healthcare.title,
-      description: projectsTranslations.projects.healthcare.description,
-      image: "/images/hero-bg.svg",
+      title: "Comnet.uz",
+      description: projectsTranslations.projects.comnet.description,
+      image: "/images/comnet.png",
       category: "web",
-      technologies: ["Angular", "Express.js", "PostgreSQL", "Docker"],
+      technologies: ["Next.js", "Express.js", "PostgreSQL", "Docker"],
       link: "#",
       githubLink: "#",
     },
     {
       id: "project4",
-      title: projectsTranslations.projects.realestate.title,
-      description: projectsTranslations.projects.realestate.description,
-      image: "/images/hero-bg.svg",
-      category: "web",
-      technologies: ["Vue.js", "Django", "PostgreSQL", "Google Maps API"],
+      title: "Haqq wallet",
+      description: projectsTranslations.projects.haqq.description,
+      image: "/images/haqq.png",
+      category: "mobile",
+      technologies: ["React Native", "Redux", "Firebase", "TypeScript"],
       link: "#",
       githubLink: "#",
     },
     {
       id: "project5",
-      title: projectsTranslations.projects.fitness.title,
-      description: projectsTranslations.projects.fitness.description,
-      image: "/images/hero-bg.svg",
-      category: "mobile",
-      technologies: ["Flutter", "Firebase", "TensorFlow Lite"],
+      title: "tvcom.uz",
+      description: projectsTranslations.projects.tvcomuz.description,
+      image: "/images/tvcom_site.png",
+      category: "web",
+      technologies: ["Vue", "Firebase"],
       link: "#",
       githubLink: "#",
     },
     {
       id: "project6",
-      title: projectsTranslations.projects.supplychain.title,
-      description: projectsTranslations.projects.supplychain.description,
-      image: "/images/hero-bg.svg",
+      title: "ZOJE MARKET",
+      description: projectsTranslations.projects.zoje.description,
+      image: "/images/zoje.png",
       category: "web",
-      technologies: ["React", "GraphQL", "MongoDB", "AWS"],
+      technologies: ["React Native", "Node.js"],
       link: "#",
       githubLink: "#",
     },
@@ -255,9 +255,6 @@ export default async function ProjectsPage({ params }: PageProps) {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               {projectsTranslations.title}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">
-              {projectsTranslations.description}
-            </p>
           </div>
         </div>
       </section>
@@ -267,7 +264,7 @@ export default async function ProjectsPage({ params }: PageProps) {
         className="py-8 border-b"
         style={{ borderColor: "var(--border)" }}
       >
-        <div className="container mx-auto px-4 md:px-6">
+        {/* <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
               <button
@@ -290,7 +287,7 @@ export default async function ProjectsPage({ params }: PageProps) {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Projects Grid */}
@@ -359,10 +356,26 @@ export default async function ProjectsPage({ params }: PageProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FiExternalLink className="mr-1" />{" "}
-                      {projectsTranslations.buttons.viewLive}
+                      <FiExternalLink className="mr-1" />
+                      {project.title == "TVCOM" ? "IOS" : ""}
+                      {project.title == "TVCOM"
+                        ? ""
+                        : projectsTranslations.buttons.viewLive}
                     </a>
                     <a
+                      href={project.githubLink}
+                      className="flex items-center hover:text-blue-800 dark:hover:text-blue-300"
+                      style={{ color: "var(--accent)" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FiExternalLink className="mr-1" />{" "}
+                      {project.title == "TVCOM" ? "ANDROID" : ""}
+                      {project.title == "TVCOM"
+                        ? ""
+                        : projectsTranslations.buttons.viewLive}
+                    </a>
+                    {/* <a
                       href={project.githubLink}
                       className="flex items-center hover:text-gray-800 dark:hover:text-gray-300"
                       style={{ color: "var(--text-secondary)" }}
@@ -371,7 +384,7 @@ export default async function ProjectsPage({ params }: PageProps) {
                     >
                       <FiGithub className="mr-1" />{" "}
                       {projectsTranslations.buttons.sourceCode}
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

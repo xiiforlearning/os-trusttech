@@ -284,7 +284,7 @@
     }
   },
   "projects": {
-    "title": "Bizning Loyihalar",
+    "title": "Dasturchilarimiz tomonidan tuzilgan loyihalar",
     "filter": {
       "all": "Barchasi",
       "web": "Veb",
@@ -323,29 +323,29 @@
       "button": "Boshlash"
     },
     "projects": {
-      "ecommerce": {
+      "tvcom": {
         "title": "Elektron Tijorat Platformasi",
-        "description": "Mijoz portali, administrator paneli va inventarni boshqarish imkoniyatlariga ega to'liq elektron tijorat yechimi."
+        "description": "Mobil va Televedizion platformalar uchun yaratilgan yuqori samarali onlayn kino ilovasi 100 000 dan ortiq foydalanuvchilarga ega."
       },
-      "banking": {
-        "title": "Bank Mobil Ilovasi",
-        "description": "Tranzaksiyalar tarixi, to'lovlar va hisoblarni boshqarish imkoniyatlariga ega xavfsiz mobil bank ilovasi."
+      "mias": {
+        "title": "MIAS",
+        "description": "MIAS-bu logistika sohasidagi aloqani soddalashtiradigan foydalanuvchilar uchun qulay dastur. Bu haydovchilar va brokerlarga tezkor bildirishnomalar, GPS kuzatuvi va to'lovlar uchun hujjatlarni oson yuklash, samaradorlik va muvofiqlashtirishni yaxshilash bilan aloqada bo'lishga yordam beradi."
       },
-      "healthcare": {
-        "title": "Sog'liqni Saqlash Boshqaruv Tizimi",
-        "description": "Bemorlar ma'lumotlari, uchrashuvlar jadvali va hisob-kitoblar uchun keng qamrovli sog'liqni saqlash platformasi."
+      "comnet": {
+        "title": "Comnet.uz",
+        "description": "Comnet.uz O'zbekistondagi yetakchi Internet-provayder bo'lib, 100 000 dan ortiq mijozlarga xizmat ko'rsatadi. Veb-sayt sifatli kod bilan qurilgan bo'lib, uning xizmatlarida ishonchlilik va samaradorlikni ta'minlaydi."
       },
-      "realestate": {
-        "title": "Ko'chmas Mulk Marketpleysi",
-        "description": "Virtual sayohatlar va ipoteka kalkulyatori bilan ko'chmas mulkni ro'yxatga olish va qidirish platformasi."
+      "haqq": {
+        "title": "Haqq Wallet",
+        "description": "HAQQ Wallet — bu ISLM tokenlarini boshqarish va staking qilish uchun xavfsiz kriptovalyuta boshqaruvi taklif etadigan, TypeScript bilan yaratilgan React Native ilovasi."
       },
-      "fitness": {
-        "title": "Fitnes Kuzatish Ilovasi",
-        "description": "Mashg'ulot rejalari, progress monitoringi va ijtimoiy funksiyalarga ega mobil fitnes kuzatuvchi."
+      "tvcomuz": {
+        "title": "Tvcom.uz",
+        "description": "Tvcom.uz — Vue.js yordamida yaratilgan sayt bo'lib, foydalanuvchilarga televizion xizmatlar va kontentga oson kirish imkonini beradi. Sayt, O'zbekistondagi foydalanuvchilar uchun televizion dasturlar va xizmatlarni o'rganish uchun qulay navigatsiya, samarali ishlash va toza interfeysni taqdim etadi."
       },
-      "supplychain": {
-        "title": "Ta'minot Zanjiri Boshqaruv Tizimi",
-        "description": "Inventarni kuzatish, buyurtmalarni boshqarish va tahliliy ma'lumotlarga ega to'liq ta'minot zanjiri yechimi."
+      "zoje": {
+        "title": "ZOJE MARKET",
+        "description": "Zoje Market — bu tikuv mashinalari kompaniyasi uchun yaratilgan kross-platforma ilovasi bo'lib, foydalanuvchilarga mahsulotlar, xizmatlar va qo'llab-quvvatlashga oson kirish imkoniyatini taqdim etadi. Ilova iOS va Android qurilmalari bo'ylab uzluksiz xarid qilish tajribasini taklif etadi."
       }
     }
   },

@@ -287,7 +287,7 @@
     }
   },
   "projects": {
-    "title": "Our Projects",
+    "title": "Projects our developers have worked on",
     "filter": {
       "all": "All",
       "web": "Web",
@@ -326,29 +326,29 @@
       "button": "Get Started"
     },
     "projects": {
-      "ecommerce": {
-        "title": "E-commerce Platform",
-        "description": "A complete e-commerce solution with customer portal, admin dashboard, and inventory management."
+      "tvcom": {
+        "title": "TVCOM",
+        "description": "A high-performance online cinema application built for both mobile and TV platforms, serving over 100,000 users with seamless video streaming and an intuitive user experience."
       },
-      "banking": {
-        "title": "Banking Mobile App",
-        "description": "Secure mobile banking application with transaction history, bill payments, and account management."
+      "mias": {
+        "title": "MIAS",
+        "description": "MIAS is a user-friendly app that streamlines communication in logistics. It helps drivers and brokers stay connected with instant notifications, GPS tracking, and easy document uploads for payments, improving efficiency and coordination."
       },
-      "healthcare": {
-        "title": "Healthcare Management System",
-        "description": "Comprehensive healthcare platform for patient records, appointment scheduling, and billing."
+      "comnet": {
+        "title": "Comnet",
+        "description": "Comnet.uz is a leading internet service provider in Uzbekistan, serving over 100,000 clients. The website is built with clean code, ensuring reliability and efficiency in its services."
       },
-      "realestate": {
-        "title": "Real Estate Marketplace",
-        "description": "Property listing and search platform with virtual tours and mortgage calculator."
+      "haqq": {
+        "title": "Haqq Wallet",
+        "description": "HAQQ Wallet is a React Native app built with TypeScript for secure cryptocurrency management, supporting ISLM token staking and offering an international solution on iOS and Android."
       },
-      "fitness": {
-        "title": "Fitness Tracking App",
-        "description": "Mobile fitness tracker with workout plans, progress monitoring, and social features."
+      "tvcomuz": {
+        "title": "Tvcom.uz",
+        "description": "Tvcom.uz is a website built with Vue.js, offering a seamless user experience for accessing TV services and content. It provides easy navigation, efficient performance, and a clean interface for users in Uzbekistan to explore TV programming and related services."
       },
-      "supplychain": {
-        "title": "Supply Chain Management System",
-        "description": "End-to-end supply chain solution with inventory tracking, order management, and analytics."
+      "zoje": {
+        "title": "ZOJE MARKET",
+        "description": "Zoje Market is a cross-platform app designed for a sewing machine company, providing users with easy access to products, services, and support. It offers a seamless shopping experience across both iOS and Android devices."
       }
     }
   },

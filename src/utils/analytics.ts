@@ -12,7 +12,7 @@ import { CommonEventParams, EventCategory, EventName } from "@/types/analytics";
  */
 export const pageView = (url: string) => {
   // This is just a stub - in production, this would send page view data to your analytics provider
-  if (process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === "development") {
     console.log(`Analytics pageview: ${url}`);
   }
 
@@ -32,10 +32,13 @@ export const pageView = (url: string) => {
  * @param name Event name (can use EventName enum for common events)
  * @param params Event parameters
  */
-export const trackEvent = (name: string, params: Record<string, string | number | boolean> = {}) => {
+export const trackEvent = (
+  name: string,
+  params: Record<string, string | number | boolean> = {}
+) => {
   // This is just a stub - in production, this would send event data to your analytics provider
-  if (process.env.NODE_ENV === 'development') {
-    console.log(`Analytics event: ${name}`, params);
+  if (process.env.NODE_ENV === "development") {
+    // console.log(`Analytics event: ${name}`, params);
   }
 
   // Google Analytics example
@@ -102,8 +105,8 @@ export const trackError = (
 
 // Analytics hook for pages
 export const useAnalytics = (url: string) => {
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     // Only track page views on the client side
     pageView(url);
   }
-}; 
+};

@@ -9,7 +9,7 @@
   "home": {
     "hero": {
       "title": "Innovatsion Dasturiy Yechimlar",
-      "subtitle": "Biz biznesingiz uchun ishonchli, miqyoslanadigan va xavfsiz ilovalarni yaratamiz",
+      "subtitle": "Biz biznesingiz uchun ishonchli, sifaatli va xavfsiz ilovalarni yaratamiz",
       "cta": "Biz bilan bog'laning"
     },
     "services": {
@@ -33,9 +33,9 @@
   },
   "about": {
     "title": "OS TrustTech haqida",
-    "description": "Biz innovatsion dasturiy yechimlarni yaratishga bag'ishlangan ishqiboz texnologlar jamoasimiz.",
+    "description": "Biz innovatsion dasturiy yechimlarni yaratishga  ishtiyoqli professional dasturchilar jamoasimiz.",
     "philosophy": "OS TrustTech'da biz texnik mukammallikni mijozlarimizning biznes ehtiyojlarini chuqur tushunish bilan birlashtirish kerakligiga ishonamiz. Bizning yechimlarimiz nafaqat bugungi muammolarni hal qilish uchun, balki kelajakda biznesingiz bilan birga moslashish va o'sish uchun yaratilgan.",
-    "guiding_principle": "Texnologiya mukammalligi orqali ishonch qurish.",
+    "guiding_principle": "TrustTech - bu erda ishonch texnologiya bilan uchrashadi.",
     "guiding_principle_label": "Bizning Asosiy Tamoyilimiz",
     "core_values": {
       "title": "Bizning Asosiy Qadriyatlarimiz",
@@ -61,7 +61,7 @@
       "description": "Biz so'nggi texnologiyalarni sinovdan o'tgan metodologiyalar bilan birlashtirib, vaqt sinovidan o'tadigan ajoyib natijalarni yetkazib beramiz.",
       "frontend": {
         "title": "Frontend Ishlab Chiqish",
-        "description": "Biz barcha qurilmalar va platformalarda tez, intuitiv va jozibali foydalanuvchi tajribalarini yaratish uchun zamonaviy JavaScript freymvorklari va moslashuvchan dizayn texnikalarini qo'llaymiz.",
+        "description": "Biz barcha qurilmalar va platformalarda tez, intuitiv va jozibali qulaylikka ega bo'lgan veb-saytlarni va mobil ilovalarni yaratish uchun zamonaviy texnalogiyalarni qo'llaymiz.",
         "tags": ["Zamonaviy Freymvorklar", "Moslashuvchan Dizayn", "Interaktiv UI"]
       },
       "backend": {
@@ -76,8 +76,8 @@
       },
       "practices": {
         "title": "Ishlab Chiqish Amaliyotlari",
-        "description": "Bizning ish jarayonimiz sifat, ishonchlilik va tez yechimlar yetkazib berishni ta'minlash uchun CI/CD quvurlari, avtomatlashtirilgan sinovlar va chaqqon metodologiyalarni o'z ichiga oladi.",
-        "tags": ["CI/CD Quvurlari", "Avtomatlashtirilgan Sinovlar", "Chaqqon Metodologiya"]
+        "description": "Bizning ish jarayonimiz sifat, ishonchlilik va tez yechimlar yetkazib berishni ta'minlash uchun CI/CD texnologiyalari, avtomatlashtirilgan sinovlar va ilg'or metodologiyalarni o'z ichiga oladi.",
+        "tags": ["CI/CD Texnologiyalari", "Avtomatlashtirilgan Sinovlar", "Ilg'or Metodologiya"]
       }
     },
     "mission": {
@@ -178,7 +178,7 @@
         {
           "step": "04",
           "title": "Ishlab Chiqish",
-          "description": "Yechimingizni toza, saqlanadigan kod bilan yaratish"
+          "description": "Yechimingizni sifatli, kengaytiriladigan kod bilan yaratish"
         },
         {
           "step": "05",
@@ -188,7 +188,7 @@
         {
           "step": "06",
           "title": "Joriy Etish",
-          "description": "Yechimingizni ishga tushirish va doimiy qo'llab-quvvatlashni ta'minlash"
+          "description": "Yechimingizni ishga tushirish va qo'llab-quvvatlashni ta'minlash"
         }
       ]
     },
@@ -198,7 +198,7 @@
       "button": "Biz bilan bog'laning"
     },
     "webdev": {
-      "title": "Veb-ishlab chiqish",
+      "title": "Veb saytlar ishlab chiqish",
       "description": "Eng so'nggi texnologiyalar bilan yaratilgan maxsus veb-saytlar va veb-ilovalar",
       "features": [
         "Moslashuvchan veb-ilovalar",
@@ -209,25 +209,22 @@
       ]
     },
     "mobiledev": {
-      "title": "Mobil Ilova Ishlab Chiqish",
-      "description": "iOS va Android uchun tug'ma va kross-platforma mobil ilovalar",
+      "title": "Mobil Ilovalar Ishlab Chiqish",
+      "description": "iOS va Android uchun kross-platforma mobil ilovalar",
       "features": [
-        "iOS uchun native ishlab chiqish",
-        "Android uchun native ishlab chiqish",
-        "Kross-platforma (React Native, Flutter)",
+        "Kross-platforma (React Native)",
         "Mobil ilovani qayta dizayn qilish va optimallashtirish",
-        "App Store-ga yuborish bo'yicha yordam"
+        "App Storega va Play Marketga  joylash"
       ]
     },
     "uiux": {
       "title": "UI/UX Dizayn",
-      "description": "Foydalanuvchi tajribasini va qoniqishini oshiradigan, foydalanuvchiga yo'naltirilgan dizayn",
+      "description": "Foydalanuvchi qulay va mukammal bo'lgan sifatli dizayn",
       "features": [
-        "Foydalanuvchi tadqiqoti va personalar",
         "Ma'lumot arxitekturasi",
-        "Wireframing va prototiplash",
+        "Prototiplash",
         "Vizual dizayn va brending",
-        "Foydalanish qulayligi sinovlari"
+        "Foydalanish qulayligi"
       ]
     },
     "qa": {
@@ -256,8 +253,8 @@
       "title": "DevOps va Bulut",
       "description": "Ishlab chiqish va operatsion jarayonlaringizni takomillashtiring",
       "features": [
-        "CI/CD quvurlarni o'rnatish",
-        "Konteyner orkestrlash (Docker, Kubernetes)",
+        "CI/CD texnologiyalari o'rnatish",
+        "Konteyner sozlash (Docker, Kubernetes)",
         "Bulutga ko'chirish (AWS, Azure, GCP)",
         "Kod sifatidagi infratuzilma",
         "Monitoring va jurnal yuritish yechimlari"
@@ -369,11 +366,11 @@
       "messagePlaceholder": "Xabaringiz"
     },
     "info": "Aloqa Ma'lumotlari",
-    "phone": "+998 71 234 5678",
-    "email": "info@ostrusttech.uz",
+    "phone": "+998 93 593 7536",
+    "email": "contact@ostt.uz",
     "address": {
       "title": "Ofisimizga tashrif buyuring",
-      "street": "Texnologiyalar ko'chasi 123",
+      "street": "Muqanna berk ko'chasi, 3",
       "city": "Toshkent",
       "country": "O'zbekiston"
     },
@@ -396,7 +393,7 @@
       "questions": [
         {
           "question": "Qanday xizmatlarni taklif qilasiz?",
-          "answer": "Biz veb-ishlab chiqish, mobil ilovalarni ishlab chiqish, UX/UI dizayn va bulutli yechimlarni o'z ichiga olgan dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz."
+          "answer": "Biz veb saytlarini ishlab chiqish, mobil ilovalarni ishlab chiqish, UX/UI dizayn va bulutli yechimlarni o'z ichiga olgan dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz."
         },
         {
           "question": "Loyihani ishlab chiqish qanchaga tushadi?",
@@ -415,7 +412,7 @@
     "success": "Rahmat! Xabaringiz muvaffaqiyatli yuborildi."
   },
   "footer": {
-    "rights": "© 2024 OS TrustTech. Barcha huquqlar himoyalangan.",
+    "rights": "© 2025 OS TrustTech. Barcha huquqlar himoyalangan.",
     "privacy": "Maxfiylik siyosati",
     "terms": "Foydalanish shartlari"
   }

@@ -64,6 +64,9 @@ nav.bg-white {
   background-color: var(--background) !important;
   border-bottom: 1px solid var(--border);
 }
+nav .bg-white{
+  background-color: var(--background) !important;
+}
 
 nav .text-blue-600, 
 nav a.text-blue-600,

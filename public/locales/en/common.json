@@ -369,11 +369,11 @@
       "messagePlaceholder": "Your message"
     },
     "info": "Contact Information",
-    "phone": "+998 71 234 5678",
-    "email": "info@ostrusttech.uz",
+    "phone": "+998 93 593 7536",
+    "email": "contact@ostt.uz",
     "address": {
       "title": "Visit Our Office",
-      "street": "123 Technology Street",
+      "street": "Mukanna street, 3",
       "city": "Tashkent",
       "country": "Uzbekistan"
     },
@@ -415,7 +415,7 @@
     "success": "Thank you! Your message has been sent successfully."
   },
   "footer": {
-    "rights": "© 2024 OS TrustTech. All rights reserved.",
+    "rights": "© 2025 OS TrustTech. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   }

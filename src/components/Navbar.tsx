@@ -25,7 +25,7 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const pathname = usePathname();
-  
+
   // Try to use ThemeContext if available, otherwise provide fallback functionality
   let themeContextValue: ThemeContextType | undefined;
   try {
@@ -41,9 +41,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
 
   // Local toggleTheme function as fallback
   const localToggleTheme = () => {
-    setIsDarkMode(prev => {
+    setIsDarkMode((prev) => {
       const newTheme = !prev;
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         if (newTheme) {
           document.documentElement.classList.add("dark");
         } else {
@@ -55,9 +55,10 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
   };
 
   // Use context methods if available, otherwise use local methods
-  const actualIsDarkMode = contextIsDarkMode !== undefined ? contextIsDarkMode : isDarkMode;
+  const actualIsDarkMode =
+    contextIsDarkMode !== undefined ? contextIsDarkMode : isDarkMode;
   const toggleTheme = contextToggleTheme || localToggleTheme;
-  
+
   useEffect(() => {
     setMounted(true);
     // Set initial locale from prop
@@ -65,14 +66,14 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
       setCurrentLocale(locale);
     } else {
       // Extract locale from pathname (en, ru, uz) as fallback
-      const pathLocale = pathname.split('/')[1];
-      if (pathLocale === 'en' || pathLocale === 'ru' || pathLocale === 'uz') {
+      const pathLocale = pathname.split("/")[1];
+      if (pathLocale === "en" || pathLocale === "ru" || pathLocale === "uz") {
         setCurrentLocale(pathLocale);
       }
     }
 
     // Initialize with light mode when using local state
-    if (!themeContextValue && typeof window !== 'undefined') {
+    if (!themeContextValue && typeof window !== "undefined") {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
     }
@@ -85,15 +86,15 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
 
   // Extract the current route without the locale prefix
   const getRouteWithoutLocale = () => {
-    const pathParts = pathname.split('/');
+    const pathParts = pathname.split("/");
     if (pathParts.length > 2) {
-      return '/' + pathParts.slice(2).join('/');
+      return "/" + pathParts.slice(2).join("/");
     }
-    return '/';
+    return "/";
   };
 
   const currentRoute = getRouteWithoutLocale();
-  
+
   const navLinks = [
     { href: "/", label: translations.nav.home },
     { href: "/about", label: translations.nav.about },
@@ -137,7 +138,7 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
           {/* Controls: Language & Theme */}
           <div className="hidden md:flex items-center space-x-4">
             <div className="relative">
-              <button 
+              <button
                 className="flex items-center text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                 onClick={toggleLangDropdown}
                 aria-expanded={isLangDropdownOpen}
@@ -146,13 +147,13 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                 <span className="uppercase">{currentLocale}</span>
               </button>
               {isLangDropdownOpen && (
-                <div 
-                  className="absolute right-0 mt-2 w-24 bg-white dark:bg-gray-800 rounded shadow-lg py-1 z-10"
-                >
+                <div className="absolute right-0 mt-2 w-26 bg-white dark:bg-gray-800 rounded shadow-lg py-1 z-10">
                   <Link
                     href={`/en${currentRoute}`}
-                    className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
-                      currentLocale === "en" ? "text-indigo-600 dark:text-indigo-400" : "text-gray-700 dark:text-gray-300"
+                    className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700  ${
+                      currentLocale === "en"
+                        ? "text-indigo-600 dark:text-indigo-400"
+                        : "text-gray-700 dark:text-gray-300"
                     }`}
                     onClick={closeLangDropdown}
                   >
@@ -161,7 +162,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                   <Link
                     href={`/ru${currentRoute}`}
                     className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
-                      currentLocale === "ru" ? "text-indigo-600 dark:text-indigo-400" : "text-gray-700 dark:text-gray-300"
+                      currentLocale === "ru"
+                        ? "text-indigo-600 dark:text-indigo-400"
+                        : "text-gray-700 dark:text-gray-300"
                     }`}
                     onClick={closeLangDropdown}
                   >
@@ -170,7 +173,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                   <Link
                     href={`/uz${currentRoute}`}
                     className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
-                      currentLocale === "uz" ? "text-indigo-600 dark:text-indigo-400" : "text-gray-700 dark:text-gray-300"
+                      currentLocale === "uz"
+                        ? "text-indigo-600 dark:text-indigo-400"
+                        : "text-gray-700 dark:text-gray-300"
                     }`}
                     onClick={closeLangDropdown}
                   >
@@ -185,7 +190,11 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
               aria-label="Toggle dark mode"
               className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
             >
-              {actualIsDarkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
+              {actualIsDarkMode ? (
+                <FiSun className="w-5 h-5" />
+              ) : (
+                <FiMoon className="w-5 h-5" />
+              )}
             </button>
           </div>
 
@@ -196,7 +205,11 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
               aria-label="Toggle dark mode"
               className="text-gray-700 dark:text-gray-300"
             >
-              {actualIsDarkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
+              {actualIsDarkMode ? (
+                <FiSun className="w-5 h-5" />
+              ) : (
+                <FiMoon className="w-5 h-5" />
+              )}
             </button>
 
             <button
@@ -204,7 +217,11 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
               aria-label="Toggle menu"
               className="text-gray-700 dark:text-gray-300"
             >
-              {isOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
+              {isOpen ? (
+                <FiX className="w-6 h-6" />
+              ) : (
+                <FiMenu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -229,7 +246,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                 <Link
                   href={`/en${currentRoute}`}
                   className={`${
-                    currentLocale === "en" ? "text-indigo-600 dark:text-indigo-400 font-medium" : "text-gray-700 dark:text-gray-300"
+                    currentLocale === "en"
+                      ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                      : "text-gray-700 dark:text-gray-300"
                   }`}
                   onClick={closeMenu}
                 >
@@ -238,7 +257,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                 <Link
                   href={`/ru${currentRoute}`}
                   className={`${
-                    currentLocale === "ru" ? "text-indigo-600 dark:text-indigo-400 font-medium" : "text-gray-700 dark:text-gray-300"
+                    currentLocale === "ru"
+                      ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                      : "text-gray-700 dark:text-gray-300"
                   }`}
                   onClick={closeMenu}
                 >
@@ -247,7 +268,9 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                 <Link
                   href={`/uz${currentRoute}`}
                   className={`${
-                    currentLocale === "uz" ? "text-indigo-600 dark:text-indigo-400 font-medium" : "text-gray-700 dark:text-gray-300"
+                    currentLocale === "uz"
+                      ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                      : "text-gray-700 dark:text-gray-300"
                   }`}
                   onClick={closeMenu}
                 >
@@ -262,4 +285,4 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

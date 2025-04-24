@@ -32,7 +32,7 @@ async function getTranslations(locale: string) {
 
 export default async function ContactPage({ params }: PageProps) {
   const resolvedParams = await params;
-  const locale = resolvedParams || "en";
+  const locale = resolvedParams.locale || "en";
   const translations = await getTranslations(locale);
 
   // Create contact translations object with fallbacks
@@ -52,11 +52,11 @@ export default async function ContactPage({ params }: PageProps) {
       },
       email: {
         title: "Email",
-        value: translations.contact?.email || "info@ostrusttech.uz",
+        value: translations.contact?.email || "contact@ostt.uz",
       },
       phone: {
         title: "Phone",
-        value: translations.contact?.phone || "+998 71 234 5678",
+        value: translations.contact?.phone || "+998 93 593 7536",
       },
       hours: {
         title: translations.contact?.hours?.title || "Business Hours",
@@ -166,8 +166,7 @@ export default async function ContactPage({ params }: PageProps) {
                 style={{ backgroundColor: "var(--bg-card)" }}
               >
                 <div className="space-y-6">
-                  {/* Address */}
-                  <div className="flex">
+                  {/* <div className="flex">
                     <div className="flex-shrink-0 mr-4">
                       <div
                         className="w-12 h-12 rounded-full flex items-center justify-center"
@@ -193,7 +192,7 @@ export default async function ContactPage({ params }: PageProps) {
                         {contactTranslations.info.address.country}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Email */}
                   <div className="flex">
@@ -259,7 +258,7 @@ export default async function ContactPage({ params }: PageProps) {
                   </div>
 
                   {/* Business Hours */}
-                  <div className="flex">
+                  {/* <div className="flex">
                     <div className="flex-shrink-0 mr-4">
                       <div
                         className="w-12 h-12 rounded-full flex items-center justify-center"
@@ -286,7 +285,7 @@ export default async function ContactPage({ params }: PageProps) {
                         {contactTranslations.info.hours.sunday}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -418,7 +417,7 @@ export default async function ContactPage({ params }: PageProps) {
       </section>
 
       {/* Map Section */}
-      <section className="py-16" style={{ backgroundColor: "var(--bg-muted)" }}>
+      {/* <section className="py-16" style={{ backgroundColor: "var(--bg-muted)" }}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2
@@ -432,7 +431,6 @@ export default async function ContactPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* Map Placeholder - In a real project, this would be an actual map */}
           <div className="w-full h-96 bg-gray-200 dark:bg-gray-700 rounded-lg mx-auto max-w-5xl overflow-hidden">
             <div className="w-full h-full flex items-center justify-center text-gray-500 dark:text-gray-400">
               <p className="text-lg">
@@ -442,7 +440,7 @@ export default async function ContactPage({ params }: PageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-24">

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import ClientThemeWrapper from "@/components/ClientThemeWrapper";
 import AnalyticsWrapper from "@/components/AnalyticsWrapper";
 import { PageProps } from "../../../.next/types/app/layout";
+import { Head } from "next/document";
 
 // This is needed to use server components with translation files
 async function getTranslations(locale: string) {
@@ -58,6 +59,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning className="light">
+      <head>
+        <link rel="icon" href="../favicon.ico" />
+      </head>
       <body
         className="bg-white text-gray-900 accent-indigo-600"
         suppressHydrationWarning

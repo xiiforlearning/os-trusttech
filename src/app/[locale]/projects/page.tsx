@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { PageProps } from "../../../../.next/types/app/layout";
+import { p } from "framer-motion/client";
 
 // Add type definitions for translations
 interface ProjectCategory {
@@ -142,12 +143,12 @@ export default async function ProjectsPage({ params }: PageProps) {
           translations.projects?.projects?.tvcomuz?.description ||
           "Mobile fitness tracker with workout plans, progress monitoring, and social features.",
       },
-      zoje: {
+      bt: {
         title:
-          translations.projects?.projects?.zoje?.title ||
+          translations.projects?.projects?.bt?.title ||
           "Supply Chain Management System",
         description:
-          translations.projects?.projects?.zoje?.description ||
+          translations.projects?.projects?.bt?.description ||
           "End-to-end supply chain solution with inventory tracking, order management, and analytics.",
       },
     },
@@ -165,7 +166,7 @@ export default async function ProjectsPage({ params }: PageProps) {
       description: projectsTranslations.projects.tvcom.description,
       image: "/images/tvcom.png",
       category: "mobile",
-      technologies: ["React Native", "TypeScript", "Node.js", "AWS"],
+      technologies: ["React Native", "TypeScript", "Node.js"],
       link: "https://apps.apple.com/uz/app/tvcom/id6479690034",
       githubLink:
         "https://play.google.com/store/apps/details?id=uz.comnet.tvcomstb&hl=en",
@@ -176,9 +177,9 @@ export default async function ProjectsPage({ params }: PageProps) {
       description: projectsTranslations.projects.mias.description,
       image: "/images/mias.png",
       category: "mobile",
-      technologies: ["React Native", "Redux", "Firebase", "Stripe"],
-      link: "#",
-      githubLink: "#",
+      technologies: ["React Native", "Redux", "Firebase", "Ruby"],
+      link: "https://apps.apple.com/ua/app/mias/id6450757698",
+      githubLink: "",
     },
     {
       id: "project3",
@@ -186,9 +187,9 @@ export default async function ProjectsPage({ params }: PageProps) {
       description: projectsTranslations.projects.comnet.description,
       image: "/images/comnet.png",
       category: "web",
-      technologies: ["Next.js", "Express.js", "PostgreSQL", "Docker"],
-      link: "#",
-      githubLink: "#",
+      technologies: ["Next.js", "Express.js", "PostgreSQL"],
+      link: "https://comnet.uz/",
+      githubLink: "",
     },
     {
       id: "project4",
@@ -196,9 +197,10 @@ export default async function ProjectsPage({ params }: PageProps) {
       description: projectsTranslations.projects.haqq.description,
       image: "/images/haqq.png",
       category: "mobile",
-      technologies: ["React Native", "Redux", "Firebase", "TypeScript"],
-      link: "#",
-      githubLink: "#",
+      technologies: ["React Native", "Zustand", "Firebase", "TypeScript"],
+      link: "https://www.haqq.network/wallet",
+      githubLink:
+        "https://play.google.com/store/apps/details?id=com.haqq.wallet&hl=en",
     },
     {
       id: "project5",
@@ -206,19 +208,19 @@ export default async function ProjectsPage({ params }: PageProps) {
       description: projectsTranslations.projects.tvcomuz.description,
       image: "/images/tvcom_site.png",
       category: "web",
-      technologies: ["Vue", "Firebase"],
-      link: "#",
-      githubLink: "#",
+      technologies: ["Vue", "Node.js"],
+      link: "https://tvcom.uz/",
+      githubLink: "",
     },
     {
       id: "project6",
-      title: "ZOJE MARKET",
-      description: projectsTranslations.projects.zoje.description,
-      image: "/images/zoje.png",
+      title: "BT Business",
+      description: projectsTranslations.projects.bt.description,
+      image: "/images/BT.png",
       category: "web",
-      technologies: ["React Native", "Node.js"],
-      link: "#",
-      githubLink: "#",
+      technologies: ["Next.js", "Express.js", "PostgreSQL"],
+      link: "https://business.bt.com/",
+      githubLink: "",
     },
   ];
 
@@ -357,24 +359,38 @@ export default async function ProjectsPage({ params }: PageProps) {
                       rel="noopener noreferrer"
                     >
                       <FiExternalLink className="mr-1" />
-                      {project.title == "TVCOM" ? "IOS" : ""}
-                      {project.title == "TVCOM"
+                      {project.title == "TVCOM" ||
+                      project.title == "Haqq wallet" ||
+                      project.title == "Mias transportation"
+                        ? "IOS"
+                        : ""}
+                      {project.title == "TVCOM" ||
+                      project.title == "Mias transportation" ||
+                      project.title == "Haqq wallet"
                         ? ""
                         : projectsTranslations.buttons.viewLive}
                     </a>
-                    <a
-                      href={project.githubLink}
-                      className="flex items-center hover:text-blue-800 dark:hover:text-blue-300"
-                      style={{ color: "var(--accent)" }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FiExternalLink className="mr-1" />{" "}
-                      {project.title == "TVCOM" ? "ANDROID" : ""}
-                      {project.title == "TVCOM"
-                        ? ""
-                        : projectsTranslations.buttons.viewLive}
-                    </a>
+                    {project?.githubLink ? (
+                      <a
+                        href={project.githubLink}
+                        className="flex items-center hover:text-blue-800 dark:hover:text-blue-300"
+                        style={{ color: "var(--accent)" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FiExternalLink className="mr-1" />{" "}
+                        {project.title == "TVCOM" ||
+                        project.title == "Haqq wallet"
+                          ? "ANDROID"
+                          : ""}
+                        {project.title == "TVCOM" ||
+                        project.title == "Haqq wallet"
+                          ? ""
+                          : projectsTranslations.buttons.viewLive}
+                      </a>
+                    ) : (
+                      <></>
+                    )}
                     {/* <a
                       href={project.githubLink}
                       className="flex items-center hover:text-gray-800 dark:hover:text-gray-300"
@@ -394,7 +410,7 @@ export default async function ProjectsPage({ params }: PageProps) {
       </section>
 
       {/* Client Testimonials */}
-      <section className="py-20" style={{ backgroundColor: "var(--bg-muted)" }}>
+      {/* <section className="py-20" style={{ backgroundColor: "var(--bg-muted)" }}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2
@@ -452,7 +468,7 @@ export default async function ProjectsPage({ params }: PageProps) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section

@@ -166,35 +166,6 @@ export default async function HomePage({ params }: PageProps) {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              {translations.home.clients.title}
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              {translations.home.clients.description}
-            </p>
-          </div>
-
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="relative w-32 h-32 grayscale hover:grayscale-0 transition-all"
-              >
-                <Image
-                  src={client.logo}
-                  alt={client.name}
-                  fill
-                  sizes="128px"
-                  className="object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-blue-600">

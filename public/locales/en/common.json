@@ -346,9 +346,9 @@
         "title": "Tvcom.uz",
         "description": "Tvcom.uz is a website built with Vue.js, offering a seamless user experience for accessing TV services and content. It provides easy navigation, efficient performance, and a clean interface for users in Uzbekistan to explore TV programming and related services."
       },
-      "zoje": {
-        "title": "ZOJE MARKET",
-        "description": "Zoje Market is a cross-platform app designed for a sewing machine company, providing users with easy access to products, services, and support. It offers a seamless shopping experience across both iOS and Android devices."
+      "bt": {
+        "title": "BT Business",
+        "description": "The BT Business website offers broadband, connectivity, and cloud communication services for businesses of all sizes, from startups to large enterprises. It highlights nationwide coverage across the UK, scalable solutions, strong cybersecurity, and 24/7 UK-based support."
       }
     }
   },

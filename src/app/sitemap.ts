@@ -1,16 +1,10 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.ostrusttech.uz';
-  const locales = ['en', 'ru', 'uz'];
-  
-  const routes = [
-    '',
-    '/about',
-    '/services',
-    '/projects',
-    '/contact',
-  ];
+  const baseUrl = "https://www.ostt.uz";
+  const locales = ["en", "ru", "uz"];
+
+  const routes = ["", "/about", "/services", "/projects", "/contact"];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -20,11 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
         lastModified: new Date(),
-        changeFrequency: route === '' ? 'weekly' : 'monthly',
-        priority: route === '' ? 1.0 : 0.8,
+        changeFrequency: route === "" ? "weekly" : "monthly",
+        priority: route === "" ? 1.0 : 0.8,
       });
     }
   }
 
   return sitemapEntries;
-} 
+}

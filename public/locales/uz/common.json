@@ -17,6 +17,40 @@
       "description": "Biz g'oyalaringizni amalga oshirishga yordam berish uchun dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz",
       "learnMore": "Batafsil ma'lumot"
     },
+    "projects": {
+      "badge": "Portfel",
+      "title": "Tanlangan Loyihalar",
+      "description": "Bizning so'nggi ishlarimiz va muvaffaqiyatli loyihalarimiz bilan tanishing.",
+      "viewAll": "Barcha Loyihalarni Ko'rish"
+    },
+    "about": {
+      "badge": "Biz Haqimizda",
+      "title": "Biz Kimmiz",
+      "description": "OS TrustTech - biznes transformatsiyasi va o'sishiga yordam beradigan innovatsion yechimlarni yetkazib berishga ixtisoslashgan yetakchi dasturiy ta'minot ishlab chiqish kompaniyasi.",
+      "learnMore": "Biz Haqimizda Ko'proq Ma'lumot",
+      "cards": {
+        "mission": {
+          "title": "Bizning Vazifamiz",
+          "description": "Biznesga murakkab muammolarni hal qiladigan va doimiy qiymat yarataydigan ilg'or texnologik yechimlar bilan quvvat berish."
+        },
+        "values": {
+          "title": "Bizning Qadriyatlarimiz",
+          "description": "Biz har bir ishimizda innovatsiya, sifat, shaffoflik va mijozlar manfaatini ustuvor qilamiz."
+        },
+        "commitment": {
+          "title": "Bizning Va'damiz",
+          "description": "Biz uzoq muddatli hamkorlik aloqalarini o'rnatish va kutilgandan ziyod yechimlarni yetkazib berishga intilамiz."
+        }
+      },
+      "excellence": {
+        "title": "Muvaffaqiyat Yillari",
+        "description": "Sohamizda 5 yildan ortiq tajribaga ega bo'lib, turli sohalarda yuzlab muvaffaqiyatli loyihalarni amalga oshirdik.",
+        "stats": {
+          "team": "Jamoa A'zolari",
+          "technologies": "Texnologiyalar"
+        }
+      }
+    },
     "interactive": {
       "title": "Bizning Texnologik Stekimiz",
       "description": "Biz zamonaviy va samarali ilovalarni yaratish uchun ilg'or texnologiyalardan foydalanamiz",
@@ -345,7 +379,7 @@
       },
       "bt": {
         "title": "BT Business",
-        "description": "BT Business veb-sayti startaplardanoq yirik korxonalarigacha bo‘lgan barcha bizneslar uchun internet, ulanish va bulutli aloqa xizmatlarini taklif etadi. U Buyuk Britaniyaning barcha hududlarini qamrab oladi, kengaytiriladigan yechimlar, kuchli kiberxavfsizlik va 24/7 Britaniyadagi texnik yordamni ta’minlaydi."
+        "description": "BT Business veb-sayti startaplardanoq yirik korxonalarigacha bo'lgan barcha bizneslar uchun internet, ulanish va bulutli aloqa xizmatlarini taklif etadi. U Buyuk Britaniyaning barcha hududlarini qamrab oladi, kengaytiriladigan yechimlar, kuchli kiberxavfsizlik va 24/7 Britaniyadagi texnik yordamni ta'minlaydi."
       }
     }
   },

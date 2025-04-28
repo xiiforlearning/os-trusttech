@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <!-- Logo Container -->
+  <g id="os-trusttech-logo">
+    <!-- OS Square with gradient -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <rect x="10" y="10" width="60" height="60" rx="12" fill="url(#blueGradient)" />
+    
+    <!-- OS Text -->
+    <text x="40" y="52" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="white" text-anchor="middle">OS</text>
+    
+    <!-- TrustTech Text with gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <text x="180" y="52" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="url(#textGradient)" text-anchor="middle">TrustTech</text>
+    
+    <!-- Decorative Tech Elements -->
+    <g stroke="#4f46e5" stroke-width="2.5">
+      <!-- Connection Lines -->
+      <path d="M75 40 L95 40" />
+      <path d="M95 40 L105 30" />
+      <path d="M95 40 L105 50" />
+      
+      <!-- Circuit Points -->
+      <circle cx="105" cy="30" r="3" fill="#4f46e5" />
+      <circle cx="105" cy="50" r="3" fill="#4f46e5" />
+      
+      <!-- Additional Decorative Elements -->
+      <path d="M105 30 L115 30" />
+      <path d="M105 50 L115 50" />
+      <circle cx="115" cy="30" r="3" fill="#4f46e5" />
+      <circle cx="115" cy="50" r="3" fill="#4f46e5" />
+    </g>
+  </g>
+</svg> 

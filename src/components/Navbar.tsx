@@ -150,7 +150,7 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                 <div className="absolute right-0 mt-2 w-26 bg-white dark:bg-gray-800 rounded shadow-lg py-1 z-10">
                   <Link
                     href={`/en${currentRoute}`}
-                    className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700  ${
+                    className={`block px-4 py-2 transition-colors duration-150 !hover:bg-indigo-100 !hover:text-indigo-600 dark:!hover:bg-gray-700 dark:!hover:text-indigo-400 ${
                       currentLocale === "en"
                         ? "text-indigo-600 dark:text-indigo-400"
                         : "text-gray-700 dark:text-gray-300"
@@ -161,7 +161,7 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                   </Link>
                   <Link
                     href={`/ru${currentRoute}`}
-                    className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
+                    className={`block px-4 py-2 transition-colors duration-150 !hover:bg-indigo-100 !hover:text-indigo-600 dark:!hover:bg-gray-700 dark:!hover:text-indigo-400 ${
                       currentLocale === "ru"
                         ? "text-indigo-600 dark:text-indigo-400"
                         : "text-gray-700 dark:text-gray-300"
@@ -172,7 +172,7 @@ const Navbar = ({ translations, locale = "en" }: NavbarProps) => {
                   </Link>
                   <Link
                     href={`/uz${currentRoute}`}
-                    className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 ${
+                    className={`block px-4 py-2 transition-colors duration-150 !hover:bg-indigo-100 !hover:text-indigo-600 dark:!hover:bg-gray-700 dark:!hover:text-indigo-400 ${
                       currentLocale === "uz"
                         ? "text-indigo-600 dark:text-indigo-400"
                         : "text-gray-700 dark:text-gray-300"

@@ -58,7 +58,7 @@ export default async function LocaleLayout({
   const translations = await getTranslations(locale);
 
   return (
-    <html lang={locale} suppressHydrationWarning className="light">
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="icon" href="../favicon.ico" />
       </head>

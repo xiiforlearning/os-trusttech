@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <!-- Background rectangle with rounded corners -->
+  <rect x="0" y="5" width="40" height="40" rx="8" fill="#4338ca" />
+  
+  <!-- OS letters -->
+  <text x="20" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">OS</text>
+  
+  <!-- TrustTech text -->
+  <text x="120" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">TrustTech</text>
+  
+  <!-- Decorative elements - tech circuit lines -->
+  <path d="M50 25 L60 25" stroke="#4338ca" stroke-width="2" />
+  <path d="M60 25 L65 20 L75 20" stroke="#4338ca" stroke-width="2" />
+  <path d="M60 25 L65 30 L75 30" stroke="#4338ca" stroke-width="2" />
+  <circle cx="75" cy="20" r="2" fill="#4338ca" />
+  <circle cx="75" cy="30" r="2" fill="#4338ca" />
+</svg> 

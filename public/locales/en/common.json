@@ -13,9 +13,70 @@
       "cta": "Get in Touch"
     },
     "services": {
+      "badge": "Services",
       "title": "Our Services",
       "description": "We provide end-to-end software development services to help you transform your ideas into reality",
       "learnMore": "Learn More"
+    },
+    "projects": {
+      "badge": "Portfolio",
+      "title": "Featured Projects",
+      "description": "Explore some of our recent work and successful projects.",
+      "viewAll": "View All Projects"
+    },
+    "about": {
+      "badge": "About Us",
+      "title": "Who We Are",
+      "description": "OS TrustTech is a leading software development company committed to delivering innovative solutions that drive business transformation and growth.",
+      "learnMore": "Learn More About Us",
+      "cards": {
+        "mission": {
+          "title": "Our Mission",
+          "description": "To empower businesses with cutting-edge technology solutions that solve complex challenges and create lasting value."
+        },
+        "values": {
+          "title": "Our Values",
+          "description": "We prioritize innovation, quality, transparency, and client satisfaction in everything we do."
+        },
+        "commitment": {
+          "title": "Our Commitment",
+          "description": "We're committed to building long-term partnerships and delivering solutions that exceed expectations."
+        }
+      },
+      "excellence": {
+        "title": "Years of Excellence",
+        "description": "With over 5 years in the industry, we've delivered hundreds of successful projects across various sectors.",
+        "stats": {
+          "team": "Team Members",
+          "technologies": "Technologies"
+        }
+      }
+    },
+    "solutions": {
+      "badge": "Innovation",
+      "title": "Innovative Software Solutions",
+      "description": "We combine cutting-edge technologies with proven methodologies to deliver innovative solutions that drive business growth.",
+      "viewAll": "View All Solutions",
+      "items": {
+        "custom": {
+          "title": "Custom Software Development",
+          "description": "Tailored solutions that address your specific business challenges and requirements.",
+          "features": ["Enterprise Solutions"],
+          "learnMore": "Learn More"
+        },
+        "webMobile": {
+          "title": "Web & Mobile Development",
+          "description": "Cross-platform applications that provide seamless user experiences across all devices.",
+          "features": ["Progressive Web Apps", "Native Mobile Apps", "Responsive Web Design"],
+          "learnMore": "Learn More"
+        },
+        "ai": {
+          "title": "AI & Data Analytics",
+          "description": "Leverage the power of AI and big data to gain insights and make data-driven decisions.",
+          "features": ["Predictive Analytics", "Machine Learning Models", "Business Intelligence"],
+          "learnMore": "Learn More"
+        }
+      }
     },
     "interactive": {
       "title": "Our Technology Stack",

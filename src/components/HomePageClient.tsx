@@ -584,7 +584,7 @@ export default function HomePageClient({
                       "A comprehensive analytics dashboard for enterprise clients with real-time data visualization."}
                   </p>
                   <Link
-                    href={`/${locale}/projects/enterprise-dashboard`}
+                    href={`https://play.google.com/store/apps/details?id=uz.comnet.tvcomstb&hl=en`}
                     className={`inline-flex items-center font-semibold group ${
                       isDarkMode
                         ? "text-blue-400 hover:text-blue-300"
@@ -654,7 +654,7 @@ export default function HomePageClient({
                       "A mobile application for tracking health metrics with personalized insights and recommendations."}
                   </p>
                   <Link
-                    href={`/${locale}/projects/health-tracker`}
+                    href={`https://apps.apple.com/ua/app/mias/id6450757698`}
                     className={`inline-flex items-center font-semibold group ${
                       isDarkMode
                         ? "text-purple-400 hover:text-purple-300"
@@ -724,7 +724,7 @@ export default function HomePageClient({
                       "An e-commerce platform focused on sustainable and eco-friendly products with advanced filtering."}
                   </p>
                   <Link
-                    href={`/${locale}/projects/eco-shop`}
+                    href={`https://comnet.uz/`}
                     className={`inline-flex items-center font-semibold group ${
                       isDarkMode
                         ? "text-emerald-400 hover:text-emerald-300"

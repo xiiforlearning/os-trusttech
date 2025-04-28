@@ -24,13 +24,6 @@ import {
 import { useEffect, useState } from "react";
 import ParallaxHero from "@/components/ParallaxHero";
 
-// Define PageProps interface for client components
-interface ClientPageProps {
-  params: {
-    locale: string;
-  };
-}
-
 // Metadata will be inherited from the locale layout
 
 async function getTranslations(locale: string) {
@@ -40,11 +33,14 @@ async function getTranslations(locale: string) {
   return translations.default;
 }
 
-export default function HomePage({ params }: ClientPageProps) {
+export default function HomePage({ 
+  params 
+}: { 
+  params: { locale: string } 
+}) {
   const [mounted, setMounted] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const resolvedParams = React.use(params as any) as {locale: string};
-  const locale = resolvedParams.locale || "en";
+  const locale = params.locale || "en";
   
   useEffect(() => {
     setMounted(true);

@@ -55,7 +55,7 @@ const Footer = ({ translations, locale }: FooterProps) => {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               {translations.footer.description}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
@@ -102,7 +102,7 @@ const Footer = ({ translations, locale }: FooterProps) => {
                   />
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

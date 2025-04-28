@@ -144,7 +144,7 @@ export default async function HomePage({ params }: PageProps) {
       </section>
 
       {/* Interactive Section Placeholder */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      {/* <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -163,7 +163,7 @@ export default async function HomePage({ params }: PageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Clients Section */}
 

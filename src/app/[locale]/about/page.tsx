@@ -823,7 +823,7 @@ export default async function AboutPage({ params }: PageProps) {
       </section>
 
       {/* Team Section */}
-      <section
+      {/* <section
         className="py-24"
         style={{ backgroundColor: "var(--background)" }}
       >
@@ -884,10 +884,10 @@ export default async function AboutPage({ params }: PageProps) {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Milestones Section */}
-      <section className="py-24" style={{ backgroundColor: "var(--bg-muted)" }}>
+      {/* <section className="py-24" style={{ backgroundColor: "var(--bg-muted)" }}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2
@@ -904,9 +904,7 @@ export default async function AboutPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* Alternative Timeline Design */}
           <div className="max-w-5xl mx-auto relative">
-            {/* Timeline Backbone */}
             <div
               className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 md:w-2"
               style={{
@@ -932,7 +930,6 @@ export default async function AboutPage({ params }: PageProps) {
                       index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                     } items-center md:items-start gap-8`}
                   >
-                    {/* Year Pill - positioned differently based on odd/even */}
                     <div
                       className={`
                       absolute top-0 left-0 md:static 
@@ -955,7 +952,6 @@ export default async function AboutPage({ params }: PageProps) {
                       </div>
                     </div>
 
-                    {/* Timeline Dot */}
                     <div
                       className="absolute left-0 md:left-1/2 top-0 w-6 h-6 rounded-full z-10 transform -translate-x-2.5 md:-translate-x-3"
                       style={{
@@ -965,10 +961,8 @@ export default async function AboutPage({ params }: PageProps) {
                       }}
                     ></div>
 
-                    {/* Empty space for alignment - only on md+ */}
                     <div className="hidden md:block md:w-1/2"></div>
 
-                    {/* Content Card */}
                     <div className="w-full md:w-1/2 ml-10 md:ml-0 pl-6 md:pl-0">
                       <div
                         className="rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
@@ -1011,7 +1005,7 @@ export default async function AboutPage({ params }: PageProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

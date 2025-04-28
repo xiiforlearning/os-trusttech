@@ -2,11 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { name, email, message } = body;
-    
+    const formData = await request.formData(); // <-- use formData() instead of json()
+
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+
     // Validate the input
-    if (!name || !email || !message) {
+    if (!name || !email) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -22,25 +24,38 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // In a real application, this is where you would:
-    // 1. Send an email (using services like Sendgrid, AWS SES, etc.)
-    // 2. Store the message in a database
-    // 3. Notify admins via webhook or other means
-    
-    // For now, we just log the data to the console
-    console.log("Contact form submission:", { name, email, message });
+    console.log("Contact form submission:", { name, email });
 
-    // Return a success response
+    const botToken = "8145934463:AAHiZz-YznSSaSUgRcrPR7CjIzWiFymdP0k";
+    const chatId = "8039409077";
+    const message = `
+New Form Submission:
+Name: ${name}
+Email: ${email}
+Message: Hello, this is a test message.
+    `;
+
+    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+      }),
+    });
+
     return NextResponse.json(
       { success: true, message: "Form submitted successfully" },
       { status: 200 }
     );
   } catch (error) {
     console.error("Error processing contact form:", error);
-    
+
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }
     );
   }
-} 
+}

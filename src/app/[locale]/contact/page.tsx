@@ -303,7 +303,7 @@ export default async function ContactPage({ params }: PageProps) {
                 className="rounded-lg shadow-md p-6"
                 style={{ backgroundColor: "var(--bg-card)" }}
               >
-                <form className="space-y-6">
+                <form action="/api/contact" method="POST" className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label

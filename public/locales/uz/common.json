@@ -14,28 +14,54 @@
     },
     "services": {
       "title": "Bizning Xizmatlar",
-      "description": "Biz g'oyalaringizni amalga oshirishga yordam berish uchun dasturiy ta'minot ishlab chiqish bo'yicha keng qamrovli xizmatlarni taqdim etamiz",
+      "description": "Biz sizning g'oyalaringizni amalga oshirishga yordam berish uchun dasturiy ta'minot bo'yicha keng qamrovli xizmatlarni taqdim etamiz",
       "learnMore": "Batafsil ma'lumot"
     },
+    "solutions": {
+      "badge": "Innovation",
+      "title": "Innovatsion Dasturiy Yechimlar",
+      "description": "Biz biznes o‘sishiga turtki beradigan innovatsion yechimlarni taqdim etish uchun eng ilg‘or texnologiyalarni sinovdan o‘tgan metodologiyalar bilan birlashtiramiz.",
+      "viewAll": "Barcha yechimlarni ko‘rish",
+      "items": {
+        "custom": {
+          "title": "Maxsus dastur ishlab chiqish",
+          "description": "Muayyan biznes muammolaringiz va talablaringizni hal qiladigan moslashtirilgan yechimlar.",
+          "features": ["Korxona yechimlari"],
+          "learnMore": "Batafsil"
+        },
+        "webMobile": {
+          "title": "Veb va mobil dasturlash",
+          "description": "Barcha qurilmalarda uzluksiz foydalanuvchi taassurotini ta’minlaydigan platformalararo ilovalar.",
+          "features": ["Progressiv veb-ilovalar", "Mobil ilovalar", "Moslashuvchan veb-dizayn"],
+          "learnMore": "Batafsil"
+        },
+        "ai": {
+          "title": "AI va ma’lumotlar tahlili",
+          "description": "Tahlil olish va ma’lumotlarga asoslangan qarorlar qabul qilish uchun AI va katta ma’lumotlar kuchidan foydalaning.",
+          "features": ["Bashoratli analitika", "Mashinali o‘rganish modellari", "Biznes razvedkasi"],
+          "learnMore": "Batafsil"
+        }
+      }
+    },
     "projects": {
-      "badge": "Portfel",
-      "title": "Tanlangan Loyihalar",
-      "description": "Bizning so'nggi ishlarimiz va muvaffaqiyatli loyihalarimiz bilan tanishing.",
+      "badge": "Portfolio",
+      "title": "Dasturchilarimiz tomonidan tuzilgan loyihalar",
+      "description": " ",
       "viewAll": "Barcha Loyihalarni Ko'rish"
     },
     "about": {
       "badge": "Biz Haqimizda",
       "title": "Biz Kimmiz",
-      "description": "OS TrustTech - biznes transformatsiyasi va o'sishiga yordam beradigan innovatsion yechimlarni yetkazib berishga ixtisoslashgan yetakchi dasturiy ta'minot ishlab chiqish kompaniyasi.",
+      "description": "OS TrustTech - biznes transformatsiyasi va o'sishiga yordam beradigan innovatsion yechimlarni yetkazib berishga ixtisoslashgan yetakchi dasturiy ta'minot ishlab chiqaruvchi kompaniya.",
       "learnMore": "Biz Haqimizda Ko'proq Ma'lumot",
       "cards": {
         "mission": {
           "title": "Bizning Vazifamiz",
-          "description": "Biznesga murakkab muammolarni hal qiladigan va doimiy qiymat yarataydigan ilg'or texnologik yechimlar bilan quvvat berish."
+          "description": "Biznesga murakkab muammolarni hal qiladigan va doimiy qiymat yarataydigan ilg'or texnologik yechimlar bilan quvvat quvvatlash."
         },
         "values": {
           "title": "Bizning Qadriyatlarimiz",
-          "description": "Biz har bir ishimizda innovatsiya, sifat, shaffoflik va mijozlar manfaatini ustuvor qilamiz."
+          "description": "Biz har bir ishimizda innovatsiya, sifat, shaffoflik va mijozlar manfaatini ustuvor qoygan holda bajaramiz."
         },
         "commitment": {
           "title": "Bizning Va'damiz",
@@ -358,7 +384,7 @@
     },
     "projects": {
       "tvcom": {
-        "title": "Elektron Tijorat Platformasi",
+        "title": "TVCOM - Onlayn kinoteatr",
         "description": "Mobil va Televedizion platformalar uchun yaratilgan yuqori samarali onlayn kino ilovasi 100 000 dan ortiq foydalanuvchilarga ega."
       },
       "mias": {
@@ -397,7 +423,8 @@
       "namePlaceholder": "To'liq ismingiz",
       "emailPlaceholder": "Elektron pochta manzilingiz",
       "subjectPlaceholder": "Xabaringiz mavzusi",
-      "messagePlaceholder": "Xabaringiz"
+      "messagePlaceholder": "Xabaringiz",
+      "phoneNumber":"Telefon raqamingiz"
     },
     "info": "Aloqa Ma'lumotlari",
     "phone": "+998 93 593 7536",

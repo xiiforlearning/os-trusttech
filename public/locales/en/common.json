@@ -388,7 +388,7 @@
     },
     "projects": {
       "tvcom": {
-        "title": "TVCOM",
+        "title": "TVCOM = Online Cinema",
         "description": "A high-performance online cinema application built for both mobile and TV platforms, serving over 100,000 users with seamless video streaming and an intuitive user experience."
       },
       "mias": {
@@ -427,7 +427,8 @@
       "namePlaceholder": "Your full name",
       "emailPlaceholder": "Your email address",
       "subjectPlaceholder": "Subject of your message",
-      "messagePlaceholder": "Your message"
+      "messagePlaceholder": "Your message",
+      "phoneNumber":"Your phone number" 
     },
     "info": "Contact Information",
     "phone": "+998 93 593 7536",

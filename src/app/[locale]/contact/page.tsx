@@ -75,18 +75,15 @@ export default async function ContactPage({ params }: PageProps) {
       title: translations.contact?.form?.title || "Send Us a Message",
       name: translations.contact?.form?.name || "Full Name",
       email: translations.contact?.form?.email || "Email Address",
-      subject: translations.contact?.form?.subject || "Subject",
       message: translations.contact?.form?.message || "Your Message",
       submit: translations.contact?.form?.submit || "Send Message",
       namePlaceholder:
         translations.contact?.form?.namePlaceholder || "Your full name",
       emailPlaceholder:
         translations.contact?.form?.emailPlaceholder || "Your email address",
-      subjectPlaceholder:
-        translations.contact?.form?.subjectPlaceholder ||
-        "Subject of your message",
       messagePlaceholder:
         translations.contact?.form?.messagePlaceholder || "Your message",
+      phoneNumber: translations.contact?.form?.phoneNumber,
     },
     map: {
       title: translations.contact?.map?.title || "Find Us",
@@ -353,17 +350,18 @@ export default async function ContactPage({ params }: PageProps) {
 
                   <div>
                     <label
-                      htmlFor="subject"
+                      htmlFor="phone"
                       className="block text-sm font-medium mb-2"
                       style={{ color: "var(--text-secondary)" }}
                     >
-                      {contactTranslations.form.subject}
+                      {contactTranslations.form.phoneNumber}
                     </label>
                     <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder={contactTranslations.form.subjectPlaceholder}
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+998 90 123 45 67"
+                      maxLength={17}
                       className="w-full px-4 py-2 rounded-md"
                       style={{
                         backgroundColor: "var(--bg-card)",
@@ -372,29 +370,6 @@ export default async function ContactPage({ params }: PageProps) {
                         borderColor: "var(--border)",
                       }}
                     />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-medium mb-2"
-                      style={{ color: "var(--text-secondary)" }}
-                    >
-                      {contactTranslations.form.message}
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={6}
-                      placeholder={contactTranslations.form.messagePlaceholder}
-                      className="w-full px-4 py-2 rounded-md"
-                      style={{
-                        backgroundColor: "var(--bg-card)",
-                        color: "var(--text-primary)",
-                        borderWidth: "1px",
-                        borderColor: "var(--border)",
-                      }}
-                    ></textarea>
                   </div>
 
                   <div>

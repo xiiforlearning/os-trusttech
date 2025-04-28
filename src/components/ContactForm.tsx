@@ -19,7 +19,7 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  
+
   const {
     register,
     handleSubmit,
@@ -30,33 +30,37 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     setError(null);
-    
+
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
 
       const result = await response.json();
-      
+
       if (!response.ok) {
-        throw new Error(result.error || 'Something went wrong');
+        throw new Error(result.error || "Something went wrong");
       }
-      
+
       // Show success message and reset form
       setIsSubmitted(true);
       reset();
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
     } catch (error) {
       console.error("Error submitting form:", error);
-      setError(error instanceof Error ? error.message : 'Failed to submit the form. Please try again.');
+      setError(
+        error instanceof Error
+          ? error.message
+          : "Failed to submit the form. Please try again."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -83,10 +87,10 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
               {error}
             </div>
           )}
-        
+
           <div>
-            <label 
-              htmlFor="name" 
+            <label
+              htmlFor="name"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               {translations.contact.form.name}
@@ -95,14 +99,16 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
               id="name"
               type="text"
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600 dark:text-white ${
-                errors.name ? "border-red-500 focus:ring-red-600" : "border-gray-300"
+                errors.name
+                  ? "border-red-500 focus:ring-red-600"
+                  : "border-gray-300"
               }`}
-              {...register("name", { 
+              {...register("name", {
                 required: "Name is required",
                 minLength: {
                   value: 2,
-                  message: "Name must be at least 2 characters"
-                }
+                  message: "Name must be at least 2 characters",
+                },
               })}
             />
             {errors.name && (
@@ -113,8 +119,8 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
           </div>
 
           <div>
-            <label 
-              htmlFor="email" 
+            <label
+              htmlFor="email"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               {translations.contact.form.email}
@@ -123,14 +129,16 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
               id="email"
               type="email"
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600 dark:text-white ${
-                errors.email ? "border-red-500 focus:ring-red-600" : "border-gray-300"
+                errors.email
+                  ? "border-red-500 focus:ring-red-600"
+                  : "border-gray-300"
               }`}
-              {...register("email", { 
+              {...register("email", {
                 required: "Email is required",
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: "Invalid email address"
-                }
+                  message: "Invalid email address",
+                },
               })}
             />
             {errors.email && (
@@ -141,8 +149,8 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
           </div>
 
           <div>
-            <label 
-              htmlFor="message" 
+            <label
+              htmlFor="message"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               {translations.contact.form.message}
@@ -151,14 +159,16 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
               id="message"
               rows={5}
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600 dark:text-white ${
-                errors.message ? "border-red-500 focus:ring-red-600" : "border-gray-300"
+                errors.message
+                  ? "border-red-500 focus:ring-red-600"
+                  : "border-gray-300"
               }`}
-              {...register("message", { 
+              {...register("message", {
                 required: "Message is required",
                 minLength: {
                   value: 10,
-                  message: "Message must be at least 10 characters"
-                }
+                  message: "Message must be at least 10 characters",
+                },
               })}
             ></textarea>
             {errors.message && (
@@ -167,30 +177,10 @@ const ContactForm = ({ translations, locale }: ContactFormProps) => {
               </p>
             )}
           </div>
-
-          <div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md transition-colors flex items-center justify-center disabled:bg-blue-400 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? (
-                <>
-                  <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></span>
-                  Processing...
-                </>
-              ) : (
-                <>
-                  {translations.contact.form.submit}
-                  <FiSend className="ml-2" />
-                </>
-              )}
-            </button>
-          </div>
         </form>
       )}
     </div>
   );
 };
 
-export default ContactForm; 
+export default ContactForm;

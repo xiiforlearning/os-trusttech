@@ -61,6 +61,10 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="icon" href="../favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="4UIYmWa1wMBWPvFCVAdT_-0a3GRASy481VLqKRxHeHk"
+        />
       </head>
       <body
         className="bg-white text-gray-900 accent-indigo-600"

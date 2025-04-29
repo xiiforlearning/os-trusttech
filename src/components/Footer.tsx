@@ -224,7 +224,7 @@ const Footer = ({ translations, locale }: FooterProps) => {
                   href="tel:+998935937536"
                   className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
-                  +998 93 593 7536
+                  +998 93 593 75 36
                 </a>
               </li>
             </ul>

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.ostt.uz";
-  const locales = ["en", "ru", "uz"];
+  const locales = ["uz", "en", "ru"];
 
   const routes = ["", "/about", "/services", "/projects", "/contact"];
 

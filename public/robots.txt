@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.ostrusttech.uz/sitemap.xml 
+Sitemap: https://www.ostt.uz/sitemap.xml 

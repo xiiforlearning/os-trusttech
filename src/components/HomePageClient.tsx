@@ -225,7 +225,7 @@ export default function HomePageClient({
                   </li>
                 </ul>
                 <Link
-                  href={`/${locale}/services/custom-development`}
+                  href={`/${locale}/projects`}
                   className={`inline-flex items-center font-semibold group ${
                     isDarkMode
                       ? "text-blue-400 hover:text-blue-300"
@@ -341,7 +341,7 @@ export default function HomePageClient({
                   </li>
                 </ul>
                 <Link
-                  href={`/${locale}/services/web-mobile`}
+                  href={`/${locale}/projects`}
                   className={`inline-flex items-center font-semibold group ${
                     isDarkMode
                       ? "text-purple-400 hover:text-purple-300"
@@ -457,7 +457,7 @@ export default function HomePageClient({
                   </li>
                 </ul>
                 <Link
-                  href={`/${locale}/services/ai-analytics`}
+                  href={`/${locale}/projects`}
                   className={`inline-flex items-center font-semibold group ${
                     isDarkMode
                       ? "text-emerald-400 hover:text-emerald-300"
@@ -474,7 +474,7 @@ export default function HomePageClient({
 
           <div className="mt-16 text-center">
             <Link
-              href={`/${locale}/services`}
+              href={`/${locale}/projects`}
               className={`inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${
                 isDarkMode
                   ? "bg-blue-500 hover:bg-blue-600 shadow-blue-500/20"
